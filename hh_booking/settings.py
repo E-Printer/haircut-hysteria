@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u!mbnqwgi9a+u0nxys38rq0g&#j!p3%i=5x_736n5u9efsv&i8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net',]
+ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', '']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 

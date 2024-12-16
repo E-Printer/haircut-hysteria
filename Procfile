@@ -1,0 +1,1 @@
+web: gunicorn hh_booking.wsgi
