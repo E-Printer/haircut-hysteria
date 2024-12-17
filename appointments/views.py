@@ -66,9 +66,12 @@ def edit_booking(request,  pk):
         'booking': booking
     })
 
-
-def delete_booking(request):
+def delete_booking(request, pk):
     """
     Take an instance of a booking based on it's id and delete it
     """
+    booking = get_object_or_404(Booking, pk=pk)
+    booking.delete()
+    messages.success(request, "Post deleted successfully!")
+    return redirect('booking_list')
 
