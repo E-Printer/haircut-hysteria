@@ -15,6 +15,7 @@ class HomePage(TemplateView):
 
 class BookingList(ListView):
     """
+    view all a users bookings as a list
     """
     model = Booking
     template_name = "my_bookings.html"
@@ -43,4 +44,31 @@ def make_booking(request):
         form = BookingForm()
 
     return render(request, "new_booking.html", {"form": form})
+
+# view for deleting a booking
+
+def edit_booking(request,  pk):
+    """
+    Take an instance of a booking based on it's id and edit it
+    """
+    booking = get_object_or_404(Booking, pk=pk)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            booking = form.save()
+            messages.success(request, "Appointment updated successfully!")
+            return redirect('booking_list')
+        else: messages.error(request, "There was an error updating your appointment")
+    else:
+        form = BookingForm(instance=booking)
+    return render(request, 'edit_booking.html', {
+        'form': form,
+        'booking': booking
+    })
+
+
+def delete_booking(request):
+    """
+    Take an instance of a booking based on it's id and delete it
+    """
 
