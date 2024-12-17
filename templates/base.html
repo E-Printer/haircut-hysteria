@@ -1,12 +1,12 @@
 {% load static %}
 
 <!-- {% url 'home' as home_url %}
-{% url 'about' as about_url %}
+<!-- {% url 'about' as about_url %}
 {% url 'review' as review_url %}
 {% url 'contact' as contact_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
-{% url 'account_logout' as logout_url %} -->
+{% url 'account_logout' as logout_url %} --> 
 
 
 <!DOCTYPE html>
@@ -74,6 +74,9 @@
         </div>
     </div>
     <main class="flex-shrink-0 main-bg">
+
+
+
         <div class="login-status">
             {% if user.is_authenticated %}
             <p class="text-center m-2">You are logged in as {{ user }}</p>

@@ -32,7 +32,7 @@ class Booking(models.Model):
     customer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="booking")
     stylist = models.ForeignKey(Stylist, on_delete=models.CASCADE, related_name="appointments")
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
-    message = models.CharField(max_length=280, blank=True, null=True)
+    message = models.CharField(max_length=1000, blank=True, null=True)
     date = models.DateField()
     time = models.TimeField()
     created_on = models.DateTimeField(auto_now=True)
