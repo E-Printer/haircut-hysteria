@@ -1,13 +1,21 @@
 {% load static %}
 
 {% url 'home' as home_url %}
+{% url 'about' as about_url %}
+{% url 'review' as review_url %}
+{% url 'contact' as contact_url %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+{% url 'account_logout' as logout_url %} 
 {% url 'make_booking' as make_booking_url %}
+
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
 
 <head>
     <title>Haircut Hysteria</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts CSS -->
@@ -36,6 +44,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">
                 <span class="brand">Haircut Hysteria</span>
+                
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +58,23 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/make-booking/' %}active{% endif %}" href="{% url 'make_booking' %}">Appointments</a>
                     </li>
+                    {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                                href="{% url 'account_logout' %}">
+                                Logout
+                            </a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
+                                href="{% url 'account_signup' %}">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
+                                href="{% url 'account_login' %}">Login</a>
+                        </li>
+                        {% endif %}
                 </ul>
                 <span class="navbar-subtext">
                     Subtext goes here
