@@ -34,9 +34,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
-ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', 'hh-booking-project-05701fec89a2.herokuapp.com', '8000-eprinter-haircuthysteri-gxpk5d2esca.ws.codeinstitute-ide.net', '8000-eprinter-haircuthysteri-npg5pu1a7sq.ws.codeinstitute-ide.net','8000-eprinter-haircuthysteri-1gyojtv7v17.ws.codeinstitute-ide.net']
+
+ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', 'hh-booking-project-05701fec89a2.herokuapp.com', '8000-eprinter-haircuthysteri-gxpk5d2esca.ws.codeinstitute-ide.net', '8000-eprinter-haircuthysteri-npg5pu1a7sq.ws.codeinstitute-ide.net','8000-eprinter-haircuthysteri-1gyojtv7v17.ws.codeinstitute-ide.net', '8000-eprinter-haircuthysteri-p8bx2d97ko1.ws.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
+
+SITE_ID = 1
 
 # Application definition
 
@@ -50,7 +53,10 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'appointments',
-
+    'django.contrib.sites',  
+    'allauth',  
+    'allauth.account', 
+    'allauth.socialaccount',  
 ]
 
 MIDDLEWARE = [
@@ -62,6 +68,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'hh_booking.urls'

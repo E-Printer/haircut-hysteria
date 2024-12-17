@@ -1,8 +1,11 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404, redirect
 from .forms import BookingForm
 from .models import Booking
 from django.views.generic import TemplateView, ListView
 from django.contrib import messages
+from django.contrib.auth.models import User
+from django.db import models
+
 
 class HomePage(TemplateView):
     """

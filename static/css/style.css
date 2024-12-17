@@ -1,3 +1,99 @@
-h1{
-    color: red;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-bg {
+    background-color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #0b1364;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-weight: 700;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link.active {
+    color: #FAF3C8;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-subtext {
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Container and Column Layout */
+.container {
+    margin-top: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.col-md-8.offset-md-2 {
+    padding: 20px;
+}
+
+/* Alert Styles */
+.alert-style {
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #0b1364;
+    color: white;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.social-icons {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-icons:hover {
+    color: #e8d5b5;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
 }
