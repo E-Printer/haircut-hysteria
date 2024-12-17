@@ -1,20 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block content %}
 <div>
     <form action="" method="post">
-        <h1>
-            Your bookings!
-        </h1>
-        
-            {% for booking in object_list %}
+        {% csrf_token %}
+        <h1>Your Bookings!</h1>
 
-        <a href="#"><h5>{{ booking }}</h5></a>
-
-
-            {% endfor %}
-        
-        
+        {% for booking in object_list %}
+            <div>
+                <a href="{% url 'booking-detail' booking.pk %}">
+                    <h5>
+                        Booking for {{ booking.customer.username }} with {{ booking.stylist.name }} on {{ booking.date }} at {{ booking.time }}
+                    </h5>
+                </a>
+            </div>
+        {% empty %}
+            <p>You have no bookings at the moment.</p>
+        {% endfor %}
     </form>
 </div>
 {% endblock content %}
