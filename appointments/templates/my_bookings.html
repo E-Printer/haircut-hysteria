@@ -3,21 +3,27 @@
 
 {% block content %}
 <div>
-    <form action="" method="post">
-        {% csrf_token %}
-        <h1>Your Bookings!</h1>
+    {% csrf_token %}
+    <h1>Your Bookings!</h1>
+    {% if bookings %}
 
-        {% for booking in object_list %}
-            <div>
-                <a href="{% url 'booking-detail' booking.pk %}">
-                    <h5>
-                        Booking for {{ booking.customer.username }} with {{ booking.stylist.name }} on {{ booking.date }} at {{ booking.time }}
-                    </h5>
-                </a>
-            </div>
-        {% empty %}
-            <p>You have no bookings at the moment.</p>
-        {% endfor %}
-    </form>
+    {% for booking in bookings %}
+    <div>
+        <a href="#">
+            <h5>
+                Booking for {{ booking.customer.username }} with {{ booking.stylist.name }} on {{ booking.date }} at
+                {{ booking.time }}
+            </h5>
+        </a>
+        <p><p>Status: {{ booking.get_status_display }}</p></p>
+    </div>
+
+    {% endfor %}
+    {% else %}
+
+    <p>You have no bookings at the moment.</p>
+
+    {% endif %}
 </div>
+
 {% endblock content %}

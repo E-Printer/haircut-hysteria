@@ -18,9 +18,10 @@ class BookingList(ListView):
     """
     model = Booking
     template_name = "my_bookings.html"
+    context_object_name = "bookings"
 
-    def queryset(self):
-        Booking.objects.filter(user=self.request.user.customer)
+    def get_queryset(self):
+        return Booking.objects.filter(customer=self.request.user)
 
 # view for making a booking
 
