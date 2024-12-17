@@ -10,5 +10,5 @@ class BookingForm(forms.ModelForm):
         fields = ("stylist", "service", "message", "date", "time")
         widgets = {
             "date": forms.DateInput(attrs={"type": "date"}),
-            "time": forms.DateInput(attrs={"type": "time"}),
+            "time": forms.TimeInput(attrs={"type": "time"}),
         }

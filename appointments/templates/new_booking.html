@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <form action="" method="post">
+        <h1>
+            Make an appointment!
+        </h1>
+        <p>
+            {{ form.as_p }}
+            {% csrf_token %}
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock content %}
