@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
-ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', 'hh-booking-project-05701fec89a2.herokuapp.com']
+ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', 'hh-booking-project-05701fec89a2.herokuapp.com', '8000-eprinter-haircuthysteri-gxpk5d2esca.ws.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
