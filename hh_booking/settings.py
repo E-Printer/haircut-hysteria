@@ -15,7 +15,10 @@ import os
 import dj_database_url
 
 if os.path.isfile("env.py"):
-   import env
+    import env
+    DEBUG = True
+else: 
+    DEBUG = False
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
@@ -30,8 +33,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', 'hh-booking-project-05701fec89a2.herokuapp.com']
+# DEBUG = False
+ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', 'hh-booking-project-05701fec89a2.herokuapp.com', '8000-eprinter-haircuthysteri-gxpk5d2esca.ws.codeinstitute-ide.net', '8000-eprinter-haircuthysteri-npg5pu1a7sq.ws.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
@@ -44,9 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
     'cloudinary_storage',
     'cloudinary',
+    'appointments',
 
 ]
 

@@ -5,6 +5,6 @@ class HomePage(TemplateView):
     """
     displays home page
     """
-    template_name = "index.html"
+    template_name = "base.html"
 
 
