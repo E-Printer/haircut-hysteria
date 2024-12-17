@@ -9,13 +9,19 @@
 
     {% for booking in bookings %}
     <div>
-        <a href="#">
-            <h5>
-                Booking for {{ booking.customer.username }} with {{ booking.stylist.name }} on {{ booking.date }} at
-                {{ booking.time }}
-            </h5>
-        </a>
-        <p><p>Status: {{ booking.get_status_display }}</p></p>
+
+        <h5>
+            Booking for {{ booking.customer.username }} with {{ booking.stylist.name }} on {{ booking.date }} at
+            {{ booking.time }}
+        </h5>
+
+        <p>
+            Status: {{ booking.get_status_display }}
+        </p>
+        <p>
+            <a href="{% url 'edit_booking' pk=booking.pk  %}" class="btn btn-success">Edit</a>
+        </p>
+        
     </div>
 
     {% endfor %}
