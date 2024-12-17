@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto my-5">
+            <h2 class="text-center">Are you sure you want to log out?</h2>
+            <p class="text-center">You will need to log in again to access your account.</p>
+            <form method="post" action="{% url 'account_logout' %}">
+                {% csrf_token %}
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="submit" class="btn btn-danger me-2">Log Out</button>
+                    <a href="/" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -38,6 +38,8 @@ ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
+SITE_ID = 1
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -50,7 +52,10 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'appointments',
-
+    'django.contrib.sites',  
+    'allauth',  
+    'allauth.account', 
+    'allauth.socialaccount',  
 ]
 
 MIDDLEWARE = [
@@ -62,6 +67,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'hh_booking.urls'
