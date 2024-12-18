@@ -2,33 +2,36 @@
 {% load static %}
 
 {% block content %}
-<div>
-    <h1>Edit an appointment!</h1>
-    <form action="" method="post">
-        {% csrf_token %}
-        
-        <div>
-            <!-- Render form fields manually for better control -->
-            {{ form.as_p }} 
-        </div>
-        
-        <div>
-            <!-- Submit button -->
-            <button type="submit">Submit</button>
-            <a href="{% url 'delete_booking' booking.id %}" class="delete-button">Delete</a>
-        </div>
-    </form>
+<div class="container">
+    <div>
+        <h1>Edit your appointment</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+    
+            <div>
+                <!-- Render form fields manually for better control -->
+                {{ form.as_p }}
+            </div>
+    
+            <div>
+                <!-- Submit button -->
+                <button type="submit">Submit</button>
+                <a href="{% url 'delete_booking' booking.id %}" class="delete-button">Delete</a>
+            </div>
+        </form>
+    </div>
 </div>
+
 {% endblock content %}
 
 {% if form.errors %}
-    <div class="error">
-        <ul>
-            {% for field in form %}
-                {% for error in field.errors %}
-                    <li>{{ error }}</li>
-                {% endfor %}
-            {% endfor %}
-        </ul>
-    </div>
+<div class="error">
+    <ul>
+        {% for field in form %}
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
 {% endif %}
