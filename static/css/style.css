@@ -335,6 +335,7 @@ body {
 }
 
 
+
 /* style for services widget */
 
 .tabbed {
@@ -401,4 +402,15 @@ body {
 
 .vc_col-sm-3 {
     text-align: right;
+}
+
+
+
+
+/* small screen style for carousel */
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner{
+        height: auto;
+    }
 }
