@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Tabs</title>
+    <style>
+        .tabbed {
+            display: flex;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .wpb_tabs_nav {
+            list-style: none;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-right: 1px solid #ddd;
+            width: 200px;
+        }
+
+        .tab-item {
+            margin-bottom: 10px;
+        }
+
+        .tab-item a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            display: block;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .tab-item a:hover,
+        .tab-item a.active-tab {
+            background: #333;
+            color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .wpb_tabs_nav .active-tab {
+            background: #333;
+            color: #fff;
+        }
+
+        .wpb_tab {
+            display: none;
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .wpb_tab.active {
+            display: block;
+        }
+
+        .vc_row-fluid {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .vc_col-sm-6,
+        .vc_col-sm-3 {
+            flex: 1;
+        }
+
+        .vc_col-sm-3 {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wpb_content_element" data-interval="0">
+        <div class="wpb_wrapper tabbed clearfix" data-style="vertical" data-animation="" data-spacing="" data-icon-size="" data-full-width-line="" data-color-scheme="accent-color" data-alignment="left">
+
+            <!-- Tabs Navigation -->
+            <ul class="wpb_tabs_nav ui-tabs-nav clearfix">
+                <li class="tab-item"><a role="button" href="#tab-cuts"><span>Cuts</span></a></li>
+                <li class="tab-item"><a role="button" href="#tab-styling"><span>Blow Dry / Styling</span></a></li>
+                <li class="tab-item"><a role="button" href="#tab-treatments" class="active-tab"><span>Specialised Treatments</span></a></li>
+                <li class="tab-item"><a role="button" href="#tab-colour"><span>Colour</span></a></li>
+                <li class="tab-item"><a role="button" href="#tab-extensions"><span>Extensions</span></a></li>
+                <li class="tab-item"><a role="button" href="#tab-cafe"><span>Café & Bar</span></a></li>
+            </ul>
+
+            <!-- Tabs Content -->
+            <div class="wpb_tabs_content">
+                <div id="tab-cuts" class="wpb_tab">
+                    <div class="vc_row-fluid vc_row inner_row vc_row-flex small-margin-row">
+                        <div class="vc_col-sm-6">
+                            <h6>Ladies Cut and Blow</h6>
+                        </div>
+                        <div class="vc_col-sm-3">
+                            <h6>From R595</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-styling" class="wpb_tab">
+                    <div class="vc_row-fluid vc_row inner_row vc_row-flex small-margin-row">
+                        <div class="vc_col-sm-6">
+                            <h6>Styling Options</h6>
+                        </div>
+                        <div class="vc_col-sm-3">
+                            <h6>From R450</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-treatments" class="wpb_tab active">
+                    <div class="vc_row-fluid vc_row inner_row vc_row-flex small-margin-row">
+                        <div class="vc_col-sm-6">
+                            <h6>Specialised Hair Treatments</h6>
+                        </div>
+                        <div class="vc_col-sm-3">
+                            <h6>From R750</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add other tabs similarly -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabs = document.querySelectorAll(".tab-item a");
+            const panels = document.querySelectorAll(".wpb_tab");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", e => {
+                    e.preventDefault();
+
+                    // Remove active class from all tabs and hide all panels
+                    tabs.forEach(t => t.classList.remove("active-tab"));
+                    panels.forEach(panel => panel.classList.remove("active"));
+
+                    // Activate clicked tab and display its panel
+                    tab.classList.add("active-tab");
+                    const target = document.querySelector(tab.getAttribute("href"));
+                    target.classList.add("active");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
