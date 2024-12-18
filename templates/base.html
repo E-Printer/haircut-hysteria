@@ -90,20 +90,7 @@
             </div>
         </div>
     </nav>
-    {% if messages %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                    {% for message in messages %}
-                        <div class="alert alert-style {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
-                            {{ message | safe }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    {% endfor %}
-            </div>
-        </div>
-    </div>
-    {% endif %}
+
     <main class="flex-shrink-0 main-bg">
 
         <div class="login-status">
@@ -117,6 +104,30 @@
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
+
+        <!-- Toast Container -->
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            {% for message in messages %}
+            <div class="toast {% if message.tags %}{{ message.tags }}{% endif %}" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">
+                        {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}Success
+                        {% elif message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error
+                        {% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}Warning
+                        {% elif message.level == DEFAULT_MESSAGE_LEVELS.INFO %}Info
+                        {% endif %}
+                    </strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    {{ message }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+
 
     </main>
 
@@ -143,6 +154,9 @@
 
     <!-- Font Awesome CSS -->
     <script src="https://kit.fontawesome.com/3a4645c4d4.js" crossorigin="anonymous"></script>
+
+    <!-- call js for bootstrap toasts -->
+    <script src="{% static 'js/toasts.js' %}"></script>
 
     {% block extras %}
     {% endblock %}
