@@ -168,7 +168,7 @@ body {
     color: white;
     /* White text */
     padding: 10px 15px;
-    /* Add spacing */
+    /* Add spacing */ 
     margin-left: 5px;
     text-decoration: none;
     /* Remove underline */
@@ -293,7 +293,7 @@ body {
 }
 
 .carousel-img {
-    object-fit: contain; /* Ensures the image covers the area */
+    object-fit: cover; /* Ensures the image covers the area */
     height: 50%; /* Make the image take the full height of the carousel */
     width: 100%; /* Make the image take the full width of the carousel */
 }
@@ -308,6 +308,37 @@ body {
 
 .btn {
     z-index: 20;
+}
+
+/* Ensure the carousel controls take the full height of the carousel */
+.carousel-control-prev, .carousel-control-next {
+    height: 100%; /* Make the control buttons fill the entire height */
+    display: flex;
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+}
+
+/* Optional: Add padding to control icons for better touch areas */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a background color to the icons for visibility */
+    border-radius: 50%; /* Optional: rounds the icons */
+    padding: 10px; /* Add some padding around the icon for easier clicking */
+}
+
+
+/* Icons for the Carousel Controls */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a background color to the icons for visibility */
+    border-radius: 50%; /* Optional: rounds the icons */
+}
+
+/* Optional: Change the icon images, these are the default Bootstrap icons */
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16%3E%3Cpath d="M11.854 1.646a.5.5 0 0 1 0 .708L5.707 8l6.146 5.646a.5.5 0 0 1-.708.708L5 8l6.292-6.354a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E');
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16%3E%3Cpath d="M4.146 1.646a.5.5 0 0 0 0 .708L10.293 8l-6.147 5.646a.5.5 0 0 0 .708.708L11 8 4.708 1.646a.5.5 0 0 0-.708 0z"/%3E%3C/svg%3E');
 }
 
 /* For tablet screens */
