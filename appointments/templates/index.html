@@ -3,47 +3,48 @@
 
 {% block content %}
 
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- First Carousel Item -->
-                    <div class="carousel-item active">
-                        <img src="static/images/studio_sign.jpg" class="d-block w-100 carousel-img" alt="...">
-                        <div class="carousel-caption d-flex justify-content-center align-items-center">
-                            <a href="{% url 'make_booking' %}" class="btn btn-primary btn-lg">Book Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Second Carousel Item -->
-                    <div class="carousel-item">
-                        <img src="static/images/hair_tools.jpg" class="d-block w-100 carousel-img" alt="...">
-                        <div class="carousel-caption d-flex justify-content-center align-items-center">
-                            <a href="{% url 'make_booking' %}" class="btn btn-primary btn-lg">Book Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Third Carousel Item -->
-                    <div class="carousel-item">
-                        <img src="static/images/salon_interior.jpg" class="d-block w-100 carousel-img" alt="...">
-                        <div class="carousel-caption d-flex justify-content-center align-items-center">
-                            <a href="{% url 'make_booking' %}" class="btn btn-primary btn-lg">Book Now</a>
-                        </div>
-                    </div>
+<div>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First Carousel Item -->
+            <div class="carousel-item active">
+                <img src="static/images/studio_sign.jpg" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <a href="{% url 'make_booking' %}" class="btn btn-primary btn-lg">Book Now</a>
                 </div>
             </div>
 
-        </div>
+            <!-- Second Carousel Item -->
+            <div class="carousel-item">
+                <img src="static/images/hair_tools.jpg" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <a href="{% url 'make_booking' %}" class="btn btn-primary btn-lg">Book Now</a>
+                </div>
+            </div>
 
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            <!-- Third Carousel Item -->
+            <div class="carousel-item">
+                <img src="static/images/salon_interior.jpg" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <a href="{% url 'make_booking' %}" class="btn btn-primary btn-lg">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
+
 </div>
+
+
 
 
 
