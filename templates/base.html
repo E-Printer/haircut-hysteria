@@ -60,6 +60,10 @@
                         <a class="nav-link {% if request.path == '/make-booking/' %}active{% endif %}"
                             href="{% url 'make_booking' %}">Appointments</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/services/' %}active{% endif %}"
+                            href="{% url 'services' %}">Services</a>
+                    </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/booking-list/' %}active" aria-current="page{% endif %}"
@@ -101,9 +105,11 @@
             {% endif %}
         </div>
 
-        {% block content %}
-        <!-- Content Goes here -->
-        {% endblock content %}
+    {% block content %}
+    <!-- Content Goes here -->
+    {% endblock content %}
+
+
 
         <!-- Toast Container -->
         <div class="toast-container position-fixed top-0 end-0 p-3">
