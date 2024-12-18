@@ -2,34 +2,37 @@
 {% load static %}
 
 {% block content %}
-<div>
-    {% csrf_token %}
-    <h1>Your Bookings!</h1>
-    {% if bookings %}
-
-    {% for booking in bookings %}
+<div class="container">
     <div>
+        {% csrf_token %}
+        <h1>Your Bookings!</h1>
+        {% if bookings %}
 
-        <h5>
-            Booking for {{ booking.customer.username }} with {{ booking.stylist.name }} on {{ booking.date }} at
-            {{ booking.time }}
-        </h5>
+        {% for booking in bookings %}
+        <div>
 
-        <p>
-            Status: {{ booking.get_status_display }}
-        </p>
-        <p>
-            <a href="{% url 'edit_booking' pk=booking.pk  %}" class="btn btn-success">Edit</a>
-        </p>
-        
+            <h5>
+                Booking for {{ booking.customer.username }} with {{ booking.stylist.name }} on {{ booking.date }} at
+                {{ booking.time }}
+            </h5>
+
+            <p>
+                Status: {{ booking.get_status_display }}
+            </p>
+            <p>
+                <a href="{% url 'edit_booking' pk=booking.pk  %}" class="btn btn-success">Edit</a>
+            </p>
+
+        </div>
+
+        {% endfor %}
+        {% else %}
+
+        <p>You have no bookings at the moment.</p>
+
+        {% endif %}
     </div>
-
-    {% endfor %}
-    {% else %}
-
-    <p>You have no bookings at the moment.</p>
-
-    {% endif %}
 </div>
+
 
 {% endblock content %}
