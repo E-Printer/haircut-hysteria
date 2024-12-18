@@ -35,7 +35,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
 
-ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', 'hh-booking-project-05701fec89a2.herokuapp.com', '8000-eprinter-haircuthysteri-gxpk5d2esca.ws.codeinstitute-ide.net', '8000-eprinter-haircuthysteri-npg5pu1a7sq.ws.codeinstitute-ide.net', '8000-eprinter-haircuthysteri-p8bx2d97ko1.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-eprinter-haircuthysteri-llk6pqdwv67.ws.codeinstitute-ide.net', 'hh-booking-project-05701fec89a2.herokuapp.com', '8000-eprinter-haircuthysteri-gxpk5d2esca.ws.codeinstitute-ide.net', '8000-eprinter-haircuthysteri-npg5pu1a7sq.ws.codeinstitute-ide.net', '8000-eprinter-haircuthysteri-p8bx2d97ko1.ws.codeinstitute-ide.net','8000-eprinter-haircuthysteri-1gyojtv7v17.ws.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
@@ -58,6 +58,26 @@ INSTALLED_APPS = [
     'allauth.account', 
     'allauth.socialaccount',  
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+SITE_ID = 1  
+
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = "none"
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = 'haircut-hysteria@noreply.com'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
