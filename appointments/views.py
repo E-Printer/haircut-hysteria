@@ -27,6 +27,14 @@ class BookingList(ListView):
     def get_queryset(self):
         return Booking.objects.filter(customer=self.request.user)
 
+# view for for services
+
+class Services(TemplateView):
+    """
+    Displays the services page
+    """
+    template_name = "services.html"
+
 # view for making a booking
 
 @login_required
@@ -73,7 +81,7 @@ def send_confirmation_email(booking):
     )
 
 
-# view for deleting a booking
+# view for editing aand deleting a booking
 
 def edit_booking(request,  pk):
     """

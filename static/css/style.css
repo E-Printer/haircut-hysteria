@@ -168,7 +168,7 @@ body {
     color: white;
     /* White text */
     padding: 10px 15px;
-    /* Add spacing */
+    /* Add spacing */ 
     margin-left: 5px;
     text-decoration: none;
     /* Remove underline */
@@ -293,7 +293,7 @@ body {
 }
 
 .carousel-img {
-    object-fit: contain; /* Ensures the image covers the area */
+    object-fit: cover; /* Ensures the image covers the area */
     height: 50%; /* Make the image take the full height of the carousel */
     width: 100%; /* Make the image take the full width of the carousel */
 }
@@ -308,6 +308,37 @@ body {
 
 .btn {
     z-index: 20;
+}
+
+/* Ensure the carousel controls take the full height of the carousel */
+.carousel-control-prev, .carousel-control-next {
+    height: 100%; /* Make the control buttons fill the entire height */
+    display: flex;
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+}
+
+/* Optional: Add padding to control icons for better touch areas */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a background color to the icons for visibility */
+    border-radius: 50%; /* Optional: rounds the icons */
+    padding: 10px; /* Add some padding around the icon for easier clicking */
+}
+
+
+/* Icons for the Carousel Controls */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a background color to the icons for visibility */
+    border-radius: 50%; /* Optional: rounds the icons */
+}
+
+/* Optional: Change the icon images, these are the default Bootstrap icons */
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16%3E%3Cpath d="M11.854 1.646a.5.5 0 0 1 0 .708L5.707 8l6.146 5.646a.5.5 0 0 1-.708.708L5 8l6.292-6.354a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E');
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16%3E%3Cpath d="M4.146 1.646a.5.5 0 0 0 0 .708L10.293 8l-6.147 5.646a.5.5 0 0 0 .708.708L11 8 4.708 1.646a.5.5 0 0 0-.708 0z"/%3E%3C/svg%3E');
 }
 
 /* For tablet screens */
@@ -331,5 +362,86 @@ body {
 
     .stylist-info {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+/* style for services widget */
+
+.tabbed {
+    display: flex;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.wpb_tabs_nav {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ddd;
+    width: 200px;
+}
+
+.tab-item {
+    margin-bottom: 10px;
+}
+
+.tab-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.tab-item a:hover,
+.tab-item a.active-tab {
+    background: #333;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+
+.wpb_tabs_nav .active-tab {
+    background: #333;
+    color: #fff;
+}
+
+.wpb_tab {
+    display: none;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.wpb_tab.active {
+    display: block;
+}
+
+.vc_row-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vc_col-sm-6,
+.vc_col-sm-3 {
+    flex: 1;
+}
+
+.vc_col-sm-3 {
+    text-align: right;
+}
+
+
+
+
+/* small screen style for carousel */
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner{
+        height: auto;
     }
 }

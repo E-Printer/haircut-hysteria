@@ -1,80 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Tabs</title>
-    <style>
-        .tabbed {
-            display: flex;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 20px;
-        }
+{% load static %}
+{% block content %}
 
-        .wpb_tabs_nav {
-            list-style: none;
-            display: block;
-            margin: 0;
-            padding: 0;
-            border-right: 1px solid #ddd;
-            width: 200px;
-        }
 
-        .tab-item {
-            margin-bottom: 10px;
-        }
-
-        .tab-item a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 15px;
-            display: block;
-            border: 1px solid transparent;
-            border-radius: 4px;
-            width: 100%;
-        }
-
-        .tab-item a:hover,
-        .tab-item a.active-tab {
-            background: #333;
-            color: #fff;
-            border: 1px solid #ddd;
-        }
-
-        .wpb_tabs_nav .active-tab {
-            background: #333;
-            color: #fff;
-        }
-
-        .wpb_tab {
-            display: none;
-            flex: 1;
-            padding-left: 20px;
-        }
-
-        .wpb_tab.active {
-            display: block;
-        }
-
-        .vc_row-fluid {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .vc_col-sm-6,
-        .vc_col-sm-3 {
-            flex: 1;
-        }
-
-        .vc_col-sm-3 {
-            text-align: right;
-        }
-    </style>
-</head>
-
-<body>
+<div class="container">
     <div class="wpb_content_element" data-interval="0">
         <div class="wpb_wrapper tabbed clearfix" data-style="vertical" data-animation="" data-spacing="" data-icon-size="" data-full-width-line="" data-color-scheme="accent-color" data-alignment="left">
 
@@ -128,27 +58,13 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const tabs = document.querySelectorAll(".tab-item a");
-            const panels = document.querySelectorAll(".wpb_tab");
+</div>
+    
 
-            tabs.forEach(tab => {
-                tab.addEventListener("click", e => {
-                    e.preventDefault();
+{% endblock content %}
 
-                    // Remove active class from all tabs and hide all panels
-                    tabs.forEach(t => t.classList.remove("active-tab"));
-                    panels.forEach(panel => panel.classList.remove("active"));
+{% block extras %}
+<script src="{% static 'js/services.js' %}"></script>
+{% endblock %}
 
-                    // Activate clicked tab and display its panel
-                    tab.classList.add("active-tab");
-                    const target = document.querySelector(tab.getAttribute("href"));
-                    target.classList.add("active");
-                });
-            });
-        });
-    </script>
-</body>
 
-</html>
