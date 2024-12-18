@@ -15,7 +15,7 @@
         <div>
             <!-- Submit button -->
             <button type="submit">Submit</button>
-            <button type="delete">Delete</button>
+            <a href="{% url 'delete_booking' booking.id %}" class="delete-button">Delete</a>
         </div>
     </form>
 </div>
