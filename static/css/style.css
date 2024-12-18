@@ -170,6 +170,75 @@ body {
     color: #e8d5b5;
 }
 
+/*styling for the delete button */
+.delete-button {
+    display: inline-block;          /* Makes it look like a button */
+    background-color: #ff4d4f;      /* Red background */
+    color: white;                   /* White text */
+    padding: 10px 15px;               /* Add spacing */
+    margin-left: 5px;
+    text-decoration: none;          /* Remove underline */
+    border-radius: 5px;             /* Rounded corners */
+    font-size: 14px;                /* Font size */
+    text-align: center;             /* Center the text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Ensure no blue hover effect */
+.delete-button:hover {
+    background-color: #d9363e;      /* Darker red on hover */
+    color: white;                   /* Keep text white */
+    text-decoration: none;          /* Ensure no underline */
+}
+
+/* Prevent any browser-specific focus styles */
+.delete-button:focus {
+    outline: none;                  /* Remove focus outline */
+    background-color: #d9363e;      /* Same as hover */
+    color: white;
+}
+
+/* Active state when clicked */
+.delete-button:active {
+    background-color: #a80c0c;      /* Even darker red */
+    color: white;
+}
+
+/* Styling for the Submit button */
+.submit-button {
+    display: inline-block;          /* Makes it behave like a button */
+    background-color: #28a745;      /* Green background */
+    color: white;                   /* White text for contrast */
+    padding: 10px 15px;             /* Adds space inside the button */
+    text-decoration: none;          /* No underline */
+    border: none;                   /* Removes any border */
+    border-radius: 5px;             /* Rounded corners */
+    font-size: 14px;                /* Sets font size */
+    text-align: center;             /* Centers the text */
+    cursor: pointer;                /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.submit-button:hover {
+    background-color: #218838;      /* Darker green on hover */
+    color: white;                   /* Keep text white */
+}
+
+/* Active state when clicked */
+.submit-button:active {
+    background-color: #1e7e34;      /* Even darker green when clicked */
+    color: white;
+}
+
+/* Optional: Focus state for accessibility */
+.submit-button:focus {
+    outline: none;                  /* Removes default outline */
+    background-color: #218838;      /* Same as hover */
+    color: white;
+}
+
+
 /* Media Queries for Responsiveness */
 
 /* For mobile screens */
