@@ -121,7 +121,7 @@ All user stories can be found on the [Project Board](https://github.com/users/E-
 
 The completed sprint was composed of X separate items. Having used the MoSCoW approach to prioritisation, X were classified as "Must-Have", X as "Should-Have" and "Could-Have". The rest of the first sprint was made up of "Won't-Have" items and remain in the backlog.
 
-Full [Project Board](https://github.com/users/E-Printer/projects/4/).
+Full [Project Board](https://github.com/users/E-Printer/projects/4/)
 
 ## Flowchart & ERD
 
