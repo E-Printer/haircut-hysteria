@@ -14,7 +14,7 @@ class HomePage(TemplateView):
     """
     displays home page
     """
-    template_name = "base.html"
+    template_name = "index.html"
 
 class BookingList(ListView):
     """
