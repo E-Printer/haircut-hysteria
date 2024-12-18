@@ -3,15 +3,15 @@
 
 {% block content %}
 <div>
-    <h1>Make an appointment!</h1>
+    <h1>Edit your appointment</h1>
     <form action="" method="post">
         {% csrf_token %}
-        
+
         <div>
             <!-- Render form fields manually for better control -->
-            {{ form.as_p }} 
+            {{ form.as_p }}
         </div>
-        
+
         <div>
             <!-- Submit button -->
             <button type="submit">Submit</button>
@@ -22,13 +22,13 @@
 {% endblock content %}
 
 {% if form.errors %}
-    <div class="error">
-        <ul>
-            {% for field in form %}
-                {% for error in field.errors %}
-                    <li>{{ error }}</li>
-                {% endfor %}
-            {% endfor %}
-        </ul>
-    </div>
+<div class="error">
+    <ul>
+        {% for field in form %}
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
 {% endif %}
