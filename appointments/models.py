@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+
 # Create your models here.
 
 class Service(models.Model):
@@ -27,9 +28,7 @@ class Stylist(models.Model):
 STATUS = ((0, "Pending"), (1, "Confirmed"), (2, "Cancelled"))
 
 class Booking(models.Model):
-    """
-    """
-    customer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="booking")
+    customer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="bookings")
     stylist = models.ForeignKey(Stylist, on_delete=models.CASCADE, related_name="appointments")
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
     message = models.CharField(max_length=1000, blank=True, null=True)
