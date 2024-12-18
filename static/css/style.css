@@ -333,3 +333,72 @@ body {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
 }
+
+
+/* style for services widget */
+
+.tabbed {
+    display: flex;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.wpb_tabs_nav {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ddd;
+    width: 200px;
+}
+
+.tab-item {
+    margin-bottom: 10px;
+}
+
+.tab-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.tab-item a:hover,
+.tab-item a.active-tab {
+    background: #333;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+
+.wpb_tabs_nav .active-tab {
+    background: #333;
+    color: #fff;
+}
+
+.wpb_tab {
+    display: none;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.wpb_tab.active {
+    display: block;
+}
+
+.vc_row-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vc_col-sm-6,
+.vc_col-sm-3 {
+    flex: 1;
+}
+
+.vc_col-sm-3 {
+    text-align: right;
+}
