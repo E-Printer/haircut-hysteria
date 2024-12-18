@@ -41,6 +41,7 @@ body {
 /* Container and Column Layout */
 .container {
     margin-top: 20px;
+    padding: 0 15px;
 }
 
 .row {
@@ -64,7 +65,7 @@ body {
     width: 100px;
 }
 
-/* Button 1*/
+/* Button 1 */
 .bn632-hover {
     width: 160px;
     font-size: 16px;
@@ -77,18 +78,11 @@ body {
     border: none;
     background-size: 300% 100%;
     border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
 .bn632-hover:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
 }
 
 .bn632-hover:focus {
@@ -96,11 +90,7 @@ body {
 }
 
 .bn632-hover.bn26 {
-    background-image: linear-gradient(to right,
-            #25aae1,
-            #4481eb,
-            #04befe,
-            #3f86ed);
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
@@ -110,13 +100,11 @@ body {
     cursor: pointer;
     outline: none;
     font-size: 16px;
-    -webkit-transform: translate(0);
     transform: translate(0);
     background-image: linear-gradient(45deg, #4568dc, #b06ab3);
     padding: 0.7em 2em;
     border-radius: 65px;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-    -webkit-transition: box-shadow 0.25s;
     transition: box-shadow 0.25s;
     color: white;
 }
@@ -238,7 +226,6 @@ body {
     color: white;
 }
 
-
 /* Media Queries for Responsiveness */
 
 /* For mobile screens */
@@ -257,5 +244,60 @@ body {
 
     .footer {
         font-size: 0.9rem;
+    }
+
+    .carousel-inner {
+        height: 50vh; /* Further reduce height on smaller screens */
+    }
+
+    .carousel-caption {
+        bottom: 10px; /* Adjust button's bottom position */
+    }
+}
+
+/* Responsive Carousel */
+.carousel-inner {
+    height: 90vh; /* Makes carousel fill the viewport height */
+}
+
+.carousel-img {
+    object-fit: contain; /* Ensures the image covers the area */
+    height: 50%; /* Make the image take the full height of the carousel */
+    width: 100%; /* Make the image take the full width of the carousel */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.btn {
+    z-index: 20;
+}
+
+/* For tablet screens */
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 60vh; /* Reduce height on smaller screens */
+    }
+
+    .carousel-caption {
+        bottom: 15px; /* Adjust button's bottom position */
+    }
+
+    .carousel-img {
+        object-position: center center; /* Ensure images stay centered */
+    }
+
+    .rounded-circle {
+        width: 80px; /* Make images smaller on tablets */
+        height: 80px;
+    }
+
+    .stylist-info {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
 }
