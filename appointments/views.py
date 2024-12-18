@@ -102,4 +102,3 @@ def delete_booking(request, pk):
     booking.delete()
     messages.success(request, "Post deleted successfully!")
     return redirect('booking_list')
-
