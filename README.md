@@ -27,13 +27,13 @@ This project is a web appplication for a fictional hair salon with online bookin
 
 ## Planning
 
-<img src=static/images/readme/planning/capstone_miro_board.jpg image alt="Screenshot of project Miro board" width="600" height="300">
+<img src=static/images/readme/planning/Hackathon_Booking_System_Planning_Board.jpg image alt="Screenshot of project Miro board" width="600">
 
 <br>
 
 Initially the project was planned out using a Miro board to start to brainstorm some ideas, concepts and content.
 
-[View Miro board](https://miro.com/app/board/uXjVLA4YJ9I=/?share_link_id=560098034555)
+[View Miro board](https://miro.com/welcomeonboard/ZWx3Q2VRZDR3QVlGL3hSbW5naXhRYVJVYjRnR3Z3UnkzNFFUZ3BBWXZoNDJoRS8zdG52MDJUZkdVWHV4cXJCYjRTWFEzYmg0UFArZGxmT25Oc0kvLy9JakhRbC9OQkhFYTY0YkNHUWNsZk5GaEt0ay93ZEtlSUl1U0FNSXQyWEIhZQ==?share_link_id=365652369506)
 
 ## User Stories
 
@@ -115,7 +115,7 @@ All user stories can be found on the [Project Board](https://github.com/users/E-
 
 ## Agile Methodolgies & Project Board
 
-<img src=static/images/readme/haircut-hysteria-project-board.png alt="Screenshot of GitHub project board" width="600" height="300">
+<img src=static/images/readme/planning/haircut-hysteria-project-board.png alt="Screenshot of GitHub project board" width="600">
 
 <br>
 
@@ -127,7 +127,7 @@ Full [Project Board](https://github.com/users/E-Printer/projects/4/)
 
 ## Flowchart & ERD
 
-<img src=static/images/readme/planning/flowchart.png image alt="Flowchart for the application functions and features" width="600" height="">
+<img src=static/images/readme/planning/readme-flowchart.png image alt="Flowchart for the application functions and features" width="600" height="">
 
 <br>
 
@@ -135,74 +135,100 @@ A flowchart to show the potential flow of users across the application and to he
 
 <br>
 
-The ERD (Entity Relationship Diagram) shows all relationships for the models used within the project including the custom Reviews model. 
+The ERD (Entity Relationship Diagram) shows all relationships for the models used within the project.
 
 
-<img src=static/images/readme/erd/ERD.png image alt="ERD diagram" width="600" height="300">
+<img src=static/images/readme/planning/model_relationships.png image alt="ERD diagram" width="600" height="300">
 
 ## Design Decisions & UX
 
 Many different wireframes were produced to help plan the project including for desktop, tablet and mobile devices.
 
-Initially the project was planned to have multiple sections to the homepage but this was scaled back for the first iteration due to time constraints so further sections will be added in future to make the homepage more informative and link to other areas of the applications.
+We had several ideas during the wireframing process and as the project took shape our designs evolved. 
 
 ### Desktop
 
-<img src=static/images/readme/wireframes/desktop_homepage_wireframes.png image alt="desktop wireframe for homepage" width="600" height="300">
+<img src=static/images/readme/wireframes/wireframes-1.png image alt="desktop wireframe for homepage" width="600">
 
 <br>
 
-<img src=static/images/readme/wireframes/desktop_project_detail_1_wireframes.png image alt="desktop wireframe for project detail page showing project info" width="600" height="300">
+<img src=static/images/readme/wireframes/wireframes-2.png image alt="desktop wireframe for homepage" width="600">
 
 <br>
 
-<img src=static/images/readme/wireframes/desktop_project_detail_2_wireframes.png image alt="desktop wireframe for project detail page showing comments" width="600" height="300">
+<img src=static/images/readme/wireframes/wireframes-3.png image alt="desktop wireframe for homepage" width="600">
 
 <br>
 
-<img src=static/images/readme/wireframes/desktop_about_wireframes.png image alt="desktop wireframe for about page" width="600" height="300">
+<img src=static/images/readme/wireframes/wireframes-4.png image alt="desktop wireframe for homepage" width="600">
 
 <br>
 
-<img src=static/images/readme/wireframes/desktop_contact_wireframes.png image alt="desktop wireframe for contact page" width="600" height="300">
+<img src=static/images/readme/wireframes/wireframes-5.png image alt="desktop wireframe for homepage" width="600">
+
+<br>
+
+<img src=static/images/readme/wireframes/wireframes-6.png image alt="desktop wireframe for homepage" width="600">
+
+<br>
+
+<img src=static/images/readme/wireframes/Desktop_Create_Booking.png image alt="desktop wireframe for homepage" width="600">
+
+<br>
+
+<img src=static/images/readme/wireframes/Desktop_Booking_Confirmed.png image alt="desktop wireframe for homepage" width="600">
+
+<br>
+
+<img src=static/images/readme/wireframes/Desktop_Booking_Deleted.png image alt="desktop wireframe for homepage" width="600">
 
 <br>
 
 ### Tablet
 
-<img src=static/images/readme/wireframes/tablet_wireframes_1.png image alt="tablet wireframes for all pages" width="600" height="300">
+<img src=static/images/readme/wireframes/Tablet_Create_Booking.png image alt="tablet wireframes for all pages" height="300">
 
 <br>
 
-<img src=static/images/readme/wireframes/tablet_wireframes_2.png image alt="tablet wireframes for all pages" width="600" height="300">
+<img src=static/images/readme/wireframes/Tablet_Booking_Confirmed.png image alt="tablet wireframes for all pages" height="300">
+
+<br>
+
+<img src=static/images/readme/wireframes/Tablet_Booking_Deleted.png image alt="tablet wireframes for all pages" height="300">
 
 <br>
 
 ### Mobile
 
-<img src=static/images/readme/wireframes/mobile_wireframes_1.png image alt="mobile wireframes for all pages" width="600" height="300">
+<img src=static/images/readme/wireframes/Mobile_Create_Booking.png image alt="tablet wireframes for all pages" height="300">
 
 <br>
 
-<img src=static/images/readme/wireframes/mobile_wireframes_2.png image alt="mobile wireframes for all pages" width="600" height="300">
+<img src=static/images/readme/wireframes/Mobile_Booking_Confirmed.png image alt="tablet wireframes for all pages" height="300">
+
+<br>
+
+<img src=static/images/readme/wireframes/Mobile_Booking_Deleted.png image alt="tablet wireframes for all pages" height="300">
 
 <br>
 
 ### Typography
 
-[Google Fonts](www.googlefonts.com)
+We selected our fonts from [Google Fonts](www.googlefonts.com) and choose Roboto for the main body text, Lato for H1 headings and Noticia Text for the Brand. 
 
-<img src=static/images/readme/design/fonts.png image alt="Alt text" width="600">
+<img src=static/images/readme/design/hh_fonts.png image alt="screenshot of Google fonts selected for project" width="600">
 
 <br>
 
 ### Colours and Images
 
-<img src=static/images/readme/design/colour_pallette.png image alt="Alt text" width="600">
+<img src=static/images/readme/design/hh_colours.png image alt="screenshot of colours selected for project" width="600">
 
 <br>
 
 ### Images & Icons
+
+We sourced images from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/) as well as lifting some of our stylist images from Google images of celebrities and this hairdressing website [scar](https://scarhair.com/) Full links to stock images can be found on our [Miro board](https://miro.com/welcomeonboard/ZWx3Q2VRZDR3QVlGL3hSbW5naXhRYVJVYjRnR3Z3UnkzNFFUZ3BBWXZoNDJoRS8zdG52MDJUZkdVWHV4cXJCYjRTWFEzYmg0UFArZGxmT25Oc0kvLy9JakhRbC9OQkhFYTY0YkNHUWNsZk5GaEt0ay93ZEtlSUl1U0FNSXQyWEIhZQ==?share_link_id=365652369506).
 
 ### Accessibility
 
