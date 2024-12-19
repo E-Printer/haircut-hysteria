@@ -335,168 +335,6 @@ p {
     background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16%3E%3Cpath d="M4.146 1.646a.5.5 0 0 0 0 .708L10.293 8l-6.147 5.646a.5.5 0 0 0 .708.708L11 8 4.708 1.646a.5.5 0 0 0-.708 0z"/%3E%3C/svg%3E');
 }
 
-
-
-.carousel-button {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
-    background-color: rgba(80, 85, 91, 0.7); /* Primary color with lower opacity */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Slightly rounded corners */
-    padding: 10px 20px; /* Add padding for size */
-    font-size: 18px; /* Adjust font size */
-    z-index: 2; /* Ensure it stays above carousel slides */
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-}
-
-/* Hover effect */
-.carousel-button:hover {
-    background-color: rgba(147, 153, 160, 0.7); /* Fully opaque on hover */
-    color: white;
-}
-
-/* Carousel image adjustments (optional) */
-.carousel-img {
-    object-fit: cover;
-    height: 100%;
-}
-
-/* log in page ----------------------- */
-
-/* Login Container */
-.login-container {
-    background-color: #f8f9fa; /* Light gray background */
-    padding: 20px;
-}
-
-/* Login Card */
-.login-card {
-    border-radius: 10px; /* Rounded corners */
-    background-color: #ffffff; /* White background */
-}
-
-/* Login Title */
-.login-title {
-    font-size: 24px; /* Larger font for the title */
-    font-weight: bold;
-    color: #333333; /* Darker text color for emphasis */
-}
-
-/* Login Form Input Styling */
-.login-form input {
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ced4da; /* Subtle border color */
-    padding: 10px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
-    font-size: 14px;
-    width: 100%; /* Full width for consistency */
-    margin-bottom: 10px;
-}
-
-/* Login Button */
-.login-btn {
-    background-color: #4CAF50; /* Custom green color */
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-/* Button Hover Effect */
-.login-btn:hover {
-    background-color: #45a049; /* Slightly darker green */
-    color: white;
-}
-
-/* Login Links */
-.login-link {
-    font-weight: 500;
-    color: #4CAF50; /* Green link color */
-    transition: color 0.2s ease;
-}
-
-.login-link:hover {
-    color: #2b8a3e; /* Darker green on hover */
-}
-
-/* Forgot Password & Signup Text */
-.login-forgot,
-.login-signup {
-    font-size: 14px; /* Smaller font for additional links */
-    color: #666666; /* Subtle gray text */
-}
-
-
-/* Sign up styling ----------------------*/
-/* Sign Up Container */
-.signup-container {
-    min-height: calc(100vh - 200px); /* Adjust for footer height */
-    background-color: #f8f9fa; /* Light gray background */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Sign Up Card */
-.signup-card {
-    border-radius: 10px; /* Rounded corners */
-    background-color: #ffffff; /* White background */
-    margin-top: auto; /* Prevent overlap with footer */
-    margin-bottom: auto;
-}
-
-/* Rest of the CSS remains the same */
-.signup-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333333;
-}
-
-.signup-form input {
-    border-radius: 5px;
-    border: 1px solid #ced4da;
-    padding: 10px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.signup-btn {
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.signup-btn:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-.signup-link {
-    font-weight: 500;
-    color: #007bff;
-    transition: color 0.2s ease;
-}
-
-.signup-link:hover {
-    color: #0056b3;
-}
-
-.signup-login {
-    font-size: 14px;
-    color: #666666;
-}
-
-
-
 /* For tablet screens */
 @media (max-width: 768px) {
     .carousel-inner {
@@ -601,8 +439,8 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
+}
+
 
 /* small screen style for carousel */
 
@@ -612,20 +450,25 @@ ul {
     }
 }
 
+/* Default layout for larger screens */
+.vc_row-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vc_col-sm-6, .vc_col-sm-2, .vc_col-sm-3 {
+    width: auto; /* Allow columns to adjust in flex layout */
+}
+
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .vc_row-fluid {
         display: block; /* Stack the columns */
     }
 
-    .vc_col-sm-6, .vc_col-sm-3 {
+    .vc_col-sm-6, .vc_col-sm-2, .vc_col-sm-3 {
         width: 100%;  /* Ensure each column takes full width */
         margin-top: 10px; /* Add spacing between the columns */
-    }
-
-    .prices {
-        margin-top: 10px; /* Add spacing between description and prices */
-        text-align: left; /* Align prices to the left */
     }
 }
 
