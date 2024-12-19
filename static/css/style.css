@@ -298,35 +298,40 @@ p {
 /* Ensure the carousel controls take the full height of the carousel */
 .carousel-control-prev,
 .carousel-control-next {
-    height: 100%;
-    /* Make the control buttons fill the entire height */
+    height: 100%;  /* Make control buttons fill the entire height */
+    position: absolute;  /* Ensure the controls are placed inside the carousel */
+    top: 10px;
+    bottom: 0;
     display: flex;
-    align-items: center;
-    /* Vertically center the icon */
-    justify-content: center;
-    /* Horizontally center the icon */
+    align-items: center;  /* Vertically center the icon */
+    justify-content: center;  /* Horizontally center the icon */
+    z-index: 1050;  /* Ensure controls are above the carousel content */
 }
 
-/* Optional: Add padding to control icons for better touch areas */
+/* Optional: Add a background color to the control icons for better visibility */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Optional: adds a background color to the icons for visibility */
-    border-radius: 50%;
-    /* Optional: rounds the icons */
-    padding: 10px;
-    /* Add some padding around the icon for easier clicking */
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for visibility */
+    border-radius: 50%;  /* Rounded control icons */
+    padding: 10px;  /* Padding for better touch areas */
 }
 
-
-/* Icons for the Carousel Controls */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Optional: adds a background color to the icons for visibility */
-    border-radius: 50%;
-    /* Optional: rounds the icons */
+/* Optional: Customize the carousel control hover effect */
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);  /* Darker background on hover for better visibility */
 }
+
+/* Optional: Styling for the next control */
+.carousel-control-next {
+    right: 0;  /* Position it to the right */
+}
+
+/* Optional: Styling for the previous control */
+.carousel-control-prev {
+    left: 0;  /* Position it to the left */
+}
+
 
 /* Optional: Change the icon images, these are the default Bootstrap icons */
 .carousel-control-prev-icon {
