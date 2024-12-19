@@ -430,6 +430,71 @@ p {
 }
 
 
+/* Sign up styling ----------------------*/
+/* Sign Up Container */
+.signup-container {
+    min-height: calc(100vh - 200px); /* Adjust for footer height */
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sign Up Card */
+.signup-card {
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    margin-top: auto; /* Prevent overlap with footer */
+    margin-bottom: auto;
+}
+
+/* Rest of the CSS remains the same */
+.signup-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.signup-form input {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.signup-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.signup-link {
+    font-weight: 500;
+    color: #007bff;
+    transition: color 0.2s ease;
+}
+
+.signup-link:hover {
+    color: #0056b3;
+}
+
+.signup-login {
+    font-size: 14px;
+    color: #666666;
+}
+
 
 
 /* For tablet screens */
