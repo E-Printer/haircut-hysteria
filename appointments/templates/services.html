@@ -1,13 +1,11 @@
 {% extends 'base.html' %}
-
 {% load static %}
 {% block content %}
-
-
 <div class="container">
     <div class="wpb_content_element" data-interval="0">
-        <div class="wpb_wrapper tabbed clearfix" data-style="vertical" data-animation="" data-spacing="" data-icon-size="" data-full-width-line="" data-color-scheme="accent-color" data-alignment="left">
-
+        <div class="wpb_wrapper tabbed clearfix" data-style="vertical" data-animation="" data-spacing=""
+            data-icon-size="" data-full-width-line="" data-color-scheme="accent-color" data-alignment="left">
+            
             <!-- Tabs Navigation -->
             <ul class="wpb_tabs_nav ui-tabs-nav clearfix">
                 <li class="tab-item"><a role="button" href="#tab-cuts"><span>Cuts</span></a></li>
@@ -15,7 +13,6 @@
                 <li class="tab-item"><a role="button" href="#tab-treatments" class="active-tab"><span>Specialised Treatments</span></a></li>
                 <li class="tab-item"><a role="button" href="#tab-colour"><span>Colour</span></a></li>
                 <li class="tab-item"><a role="button" href="#tab-extensions"><span>Extensions</span></a></li>
-                <li class="tab-item"><a role="button" href="#tab-cafe"><span>Café & Bar</span></a></li>
             </ul>
 
             <!-- Tabs Content -->
@@ -23,10 +20,16 @@
                 <div id="tab-cuts" class="wpb_tab">
                     <div class="vc_row-fluid vc_row inner_row vc_row-flex small-margin-row">
                         <div class="vc_col-sm-6">
-                            <h6>Ladies Cut and Blow</h6>
+                            <h6>Women's Cut</h6>
+                            <p>A customised haircut for women, tailored to suit style and length. Maximum Duration: 1 hour</p>
                         </div>
                         <div class="vc_col-sm-3">
-                            <h6>From R595</h6>
+                            <h6>Prices:</h6>
+                            <ul>
+                                <li>£40 (Junior)</li>
+                                <li>£55 (Mid)</li>
+                                <li>£80 (Senior)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -34,10 +37,16 @@
                 <div id="tab-styling" class="wpb_tab">
                     <div class="vc_row-fluid vc_row inner_row vc_row-flex small-margin-row">
                         <div class="vc_col-sm-6">
-                            <h6>Styling Options</h6>
+                            <h6>Blowout</h6>
+                            <p>A blow-dry styling session to add volume and smoothness. Maximum Duration: 45 minutes</p>
                         </div>
                         <div class="vc_col-sm-3">
-                            <h6>From R450</h6>
+                            <h6>Prices:</h6>
+                            <ul>
+                                <li>£25 (Junior)</li>
+                                <li>£40 (Mid)</li>
+                                <li>£55 (Senior)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -46,25 +55,27 @@
                     <div class="vc_row-fluid vc_row inner_row vc_row-flex small-margin-row">
                         <div class="vc_col-sm-6">
                             <h6>Specialised Hair Treatments</h6>
+                            <p>Restore hair health with treatments tailored for your hair. Maximum Duration: 1 hour</p>
                         </div>
                         <div class="vc_col-sm-3">
-                            <h6>From R750</h6>
+                            <h6>Prices:</h6>
+                            <ul>
+                                <li>£30 (Junior)</li>
+                                <li>£45 (Mid)</li>
+                                <li>£70 (Senior)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Add other tabs similarly -->
+                <!-- Add more tabs here following the same structure -->
             </div>
         </div>
     </div>
-
 </div>
-    
 
 {% endblock content %}
 
 {% block extras %}
 <script src="{% static 'js/services.js' %}"></script>
 {% endblock %}
-
-

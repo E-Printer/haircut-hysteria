@@ -59,84 +59,61 @@ body {
     margin-top: 20px;
 }
 
-/* images styles */
+/* images styles /Stylist*/
 .rounded-circle {
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-/* Button 1 */
-.bn632-hover {
-    width: 160px;
-    font-size: 16px;
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0a0a0a;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    margin: 20px;
-    height: 55px;
-    text-align: center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    transition: all .4s ease-in-out;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
 }
 
-.bn632-hover:hover {
-    background-position: 100% 0;
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    font-weight: 400;
 }
 
-.bn632-hover:focus {
-    outline: none;
+/* Contact Us Section */
+.contact-section {
+    padding: 4rem 0;
 }
 
-.bn632-hover.bn26 {
-    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+.card-body {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Button 2 */
-.bn30 {
-    border: 5em;
-    cursor: pointer;
-    outline: none;
-    font-size: 16px;
-    transform: translate(0);
-    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
-    padding: 0.7em 2em;
-    border-radius: 65px;
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-    transition: box-shadow 0.25s;
-    color: white;
-}
-
-.bn30 .text {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
-}
-
-.bn30:after {
-    content: "";
-    border-radius: 18px;
-    position: absolute;
-    margin: 4px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    background: #0e0e10;
-}
-
-.bn30:hover {
-    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-}
-
-.bn30:hover .text {
-    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+.align-items-center {
+    display: flex;
+    align-items: center;
 }
 
 /* Footer Styles */
@@ -168,7 +145,7 @@ body {
     color: white;
     /* White text */
     padding: 10px 15px;
-    /* Add spacing */ 
+    /* Add spacing */
     margin-left: 5px;
     text-decoration: none;
     /* Remove underline */
@@ -279,23 +256,29 @@ body {
     }
 
     .carousel-inner {
-        height: 50vh; /* Further reduce height on smaller screens */
+        height: 50vh;
+        /* Further reduce height on smaller screens */
     }
 
     .carousel-caption {
-        bottom: 10px; /* Adjust button's bottom position */
+        bottom: 10px;
+        /* Adjust button's bottom position */
     }
 }
 
 /* Responsive Carousel */
 .carousel-inner {
-    height: 90vh; /* Makes carousel fill the viewport height */
+    height: 90vh;
+    /* Makes carousel fill the viewport height */
 }
 
 .carousel-img {
-    object-fit: cover; /* Ensures the image covers the area */
-    height: 50%; /* Make the image take the full height of the carousel */
-    width: 100%; /* Make the image take the full width of the carousel */
+    object-fit: cover;
+    /* Ensures the image covers the area */
+    height: 50%;
+    /* Make the image take the full height of the carousel */
+    width: 100%;
+    /* Make the image take the full width of the carousel */
 }
 
 .carousel-caption {
@@ -311,25 +294,36 @@ body {
 }
 
 /* Ensure the carousel controls take the full height of the carousel */
-.carousel-control-prev, .carousel-control-next {
-    height: 100%; /* Make the control buttons fill the entire height */
+.carousel-control-prev,
+.carousel-control-next {
+    height: 100%;
+    /* Make the control buttons fill the entire height */
     display: flex;
-    align-items: center; /* Vertically center the icon */
-    justify-content: center; /* Horizontally center the icon */
+    align-items: center;
+    /* Vertically center the icon */
+    justify-content: center;
+    /* Horizontally center the icon */
 }
 
 /* Optional: Add padding to control icons for better touch areas */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a background color to the icons for visibility */
-    border-radius: 50%; /* Optional: rounds the icons */
-    padding: 10px; /* Add some padding around the icon for easier clicking */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: adds a background color to the icons for visibility */
+    border-radius: 50%;
+    /* Optional: rounds the icons */
+    padding: 10px;
+    /* Add some padding around the icon for easier clicking */
 }
 
 
 /* Icons for the Carousel Controls */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a background color to the icons for visibility */
-    border-radius: 50%; /* Optional: rounds the icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: adds a background color to the icons for visibility */
+    border-radius: 50%;
+    /* Optional: rounds the icons */
 }
 
 /* Optional: Change the icon images, these are the default Bootstrap icons */
@@ -344,24 +338,29 @@ body {
 /* For tablet screens */
 @media (max-width: 768px) {
     .carousel-inner {
-        height: 60vh; /* Reduce height on smaller screens */
+        height: 60vh;
+        /* Reduce height on smaller screens */
     }
 
     .carousel-caption {
-        bottom: 15px; /* Adjust button's bottom position */
+        bottom: 15px;
+        /* Adjust button's bottom position */
     }
 
     .carousel-img {
-        object-position: center center; /* Ensure images stay centered */
+        object-position: center center;
+        /* Ensure images stay centered */
     }
 
     .rounded-circle {
-        width: 80px; /* Make images smaller on tablets */
+        width: 80px;
+        /* Make images smaller on tablets */
         height: 80px;
     }
 
     .stylist-info {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        font-size: 0.9rem;
+        /* Adjust font size for smaller screens */
     }
 }
 
@@ -436,12 +435,17 @@ body {
 }
 
 
-
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
 
 /* small screen style for carousel */
 
 @media only screen and (max-width: 600px) {
-    .carousel-inner{
+    .carousel-inner {
         height: auto;
     }
 }
