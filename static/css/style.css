@@ -14,8 +14,10 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #0b1364;
+    background-color: #010314;
 }
+
+.nav-link:hover { color: #ffffff31 !important; }
 
 .navbar .navbar-brand {
     color: white;
@@ -118,7 +120,7 @@ p {
 
 /* Footer Styles */
 .footer {
-    background-color: #0b1364;
+    background-color: #010314;
     color: white;
 }
 
