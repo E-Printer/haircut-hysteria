@@ -244,11 +244,15 @@ We sourced images from [Pexels](https://www.pexels.com/) and [Unsplash](https://
 
 **Home Page**
 
-The Home page of the site shows a selection of projects available to select to view more information or navigate to the next page to see more projects.
+The Home page of the site shows a carousel of images of the hair salon and an about section for the stylists at the salon.
 
-**Navigation Bar**
+**Appointments**
 
-The navigation bar is fully responsive and provides links for the Home, About, Reviews and Contact page.
+The Appointments section allows site visitors to create, edit and delete upcoming appointments and receive confirmation that this has been done. 
+
+When a user is logged in, they can see My Bookings to view all their bookings and amend them.
+
+**Services**
 
 **The Footer**
 
