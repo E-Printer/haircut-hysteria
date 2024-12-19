@@ -7,14 +7,17 @@ body {
     background-color: #f4f4f4;
 }
 
+
 .main-bg {
     background-color: #ffffff;
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #0b1364;
+    background-color: #010314;
 }
+
+.nav-link:hover { color: #ffffff31 !important; }
 
 .navbar .navbar-brand {
     color: white;
@@ -41,6 +44,7 @@ body {
 /* Container and Column Layout */
 .container {
     margin-top: 20px;
+    padding: 0 15px;
 }
 
 .row {
@@ -57,9 +61,66 @@ body {
     margin-top: 20px;
 }
 
+/* images styles /Stylist*/
+.rounded-circle {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0a0a0a;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+/* Contact Us Section */
+.contact-section {
+    padding: 4rem 0;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
 /* Footer Styles */
 .footer {
-    background-color: #0b1364;
+    background-color: #010314;
     color: white;
 }
 
@@ -75,6 +136,105 @@ body {
 
 .social-icons:hover {
     color: #e8d5b5;
+}
+
+/*styling for the delete button */
+.delete-button {
+    display: inline-block;
+    /* Makes it look like a button */
+    background-color: #ff4d4f;
+    /* Red background */
+    color: white;
+    /* White text */
+    padding: 10px 15px;
+    /* Add spacing */
+    margin-left: 5px;
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 14px;
+    /* Font size */
+    text-align: center;
+    /* Center the text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Ensure no blue hover effect */
+.delete-button:hover {
+    background-color: #d9363e;
+    /* Darker red on hover */
+    color: white;
+    /* Keep text white */
+    text-decoration: none;
+    /* Ensure no underline */
+}
+
+/* Prevent any browser-specific focus styles */
+.delete-button:focus {
+    outline: none;
+    /* Remove focus outline */
+    background-color: #d9363e;
+    /* Same as hover */
+    color: white;
+}
+
+/* Active state when clicked */
+.delete-button:active {
+    background-color: #a80c0c;
+    /* Even darker red */
+    color: white;
+}
+
+/* Styling for the Submit button */
+.submit-button {
+    display: inline-block;
+    /* Makes it behave like a button */
+    background-color: #28a745;
+    /* Green background */
+    color: white;
+    /* White text for contrast */
+    padding: 10px 15px;
+    /* Adds space inside the button */
+    text-decoration: none;
+    /* No underline */
+    border: none;
+    /* Removes any border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 14px;
+    /* Sets font size */
+    text-align: center;
+    /* Centers the text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Hover effect */
+.submit-button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    color: white;
+    /* Keep text white */
+}
+
+/* Active state when clicked */
+.submit-button:active {
+    background-color: #1e7e34;
+    /* Even darker green when clicked */
+    color: white;
+}
+
+/* Optional: Focus state for accessibility */
+.submit-button:focus {
+    outline: none;
+    /* Removes default outline */
+    background-color: #218838;
+    /* Same as hover */
+    color: white;
 }
 
 /* Media Queries for Responsiveness */
@@ -96,4 +256,250 @@ body {
     .footer {
         font-size: 0.9rem;
     }
+
+    .carousel-inner {
+        height: 50vh;
+        /* Further reduce height on smaller screens */
+    }
+
+    .carousel-caption {
+        bottom: 10px;
+        /* Adjust button's bottom position */
+    }
 }
+
+/* Responsive Carousel */
+.carousel-inner {
+    height: 90vh;
+    /* Makes carousel fill the viewport height */
+}
+
+.carousel-img {
+    object-fit: cover;
+    /* Ensures the image covers the area */
+    height: 50%;
+    /* Make the image take the full height of the carousel */
+    width: 100%;
+    /* Make the image take the full width of the carousel */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.btn {
+    z-index: 20;
+}
+
+/* Ensure the carousel controls take the full height of the carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    height: 100%;
+    /* Make the control buttons fill the entire height */
+    display: flex;
+    align-items: center;
+    /* Vertically center the icon */
+    justify-content: center;
+    /* Horizontally center the icon */
+}
+
+/* Optional: Add padding to control icons for better touch areas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: adds a background color to the icons for visibility */
+    border-radius: 50%;
+    /* Optional: rounds the icons */
+    padding: 10px;
+    /* Add some padding around the icon for easier clicking */
+}
+
+
+/* Icons for the Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: adds a background color to the icons for visibility */
+    border-radius: 50%;
+    /* Optional: rounds the icons */
+}
+
+/* Optional: Change the icon images, these are the default Bootstrap icons */
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16%3E%3Cpath d="M11.854 1.646a.5.5 0 0 1 0 .708L5.707 8l6.146 5.646a.5.5 0 0 1-.708.708L5 8l6.292-6.354a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E');
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16%3E%3Cpath d="M4.146 1.646a.5.5 0 0 0 0 .708L10.293 8l-6.147 5.646a.5.5 0 0 0 .708.708L11 8 4.708 1.646a.5.5 0 0 0-.708 0z"/%3E%3C/svg%3E');
+}
+
+
+
+/* Styling for the fixed button */
+.carousel-button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    background-color: rgba(80, 85, 91, 0.7); /* Primary color with lower opacity */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 18px; /* Adjust font size */
+    z-index: 2; /* Ensure it stays above carousel slides */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect */
+.carousel-button:hover {
+    background-color: rgba(147, 153, 160, 0.7); /* Fully opaque on hover */
+    color: white;
+}
+
+/* Carousel image adjustments (optional) */
+.carousel-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+
+/* For tablet screens */
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 60vh;
+        /* Reduce height on smaller screens */
+    }
+
+    .carousel-caption {
+        bottom: 15px;
+        /* Adjust button's bottom position */
+    }
+
+    .carousel-img {
+        object-position: center center;
+        /* Ensure images stay centered */
+    }
+
+    .rounded-circle {
+        width: 80px;
+        /* Make images smaller on tablets */
+        height: 80px;
+    }
+
+    .stylist-info {
+        font-size: 0.9rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+/* style for services widget */
+
+.tabbed {
+    display: flex;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.wpb_tabs_nav {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ddd;
+    width: 200px;
+}
+
+.tab-item {
+    margin-bottom: 10px;
+}
+
+.tab-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.tab-item a:hover,
+.tab-item a.active-tab {
+    background: #333;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+
+.wpb_tabs_nav .active-tab {
+    background: #333;
+    color: #fff;
+}
+
+.wpb_tab {
+    display: none;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.wpb_tab.active {
+    display: block;
+}
+
+.vc_row-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vc_col-sm-6,
+.vc_col-sm-3 {
+    flex: 1;
+}
+
+.vc_col-sm-3 {
+    text-align: right;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+/* small screen style for carousel */
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner {
+        height: auto;
+    }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .vc_row-fluid {
+        display: block; /* Stack the columns */
+    }
+
+    .vc_col-sm-6, .vc_col-sm-3 {
+        width: 100%;  /* Ensure each column takes full width */
+        margin-top: 10px; /* Add spacing between the columns */
+    }
+
+    .prices {
+        margin-top: 10px; /* Add spacing between description and prices */
+        text-align: left; /* Align prices to the left */
+    }
+}
+
+
