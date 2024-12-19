@@ -335,6 +335,39 @@ p {
     background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16%3E%3Cpath d="M4.146 1.646a.5.5 0 0 0 0 .708L10.293 8l-6.147 5.646a.5.5 0 0 0 .708.708L11 8 4.708 1.646a.5.5 0 0 0-.708 0z"/%3E%3C/svg%3E');
 }
 
+
+
+/* Styling for the fixed button */
+.carousel-button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    background-color: rgba(80, 85, 91, 0.7); /* Primary color with lower opacity */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 18px; /* Adjust font size */
+    z-index: 2; /* Ensure it stays above carousel slides */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect */
+.carousel-button:hover {
+    background-color: rgba(147, 153, 160, 0.7); /* Fully opaque on hover */
+    color: white;
+}
+
+/* Carousel image adjustments (optional) */
+.carousel-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+
 /* For tablet screens */
 @media (max-width: 768px) {
     .carousel-inner {
@@ -439,8 +472,8 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
+  }
+  
 
 /* small screen style for carousel */
 
@@ -450,25 +483,20 @@ ul {
     }
 }
 
-/* Default layout for larger screens */
-.vc_row-fluid {
-    display: flex;
-    justify-content: space-between;
-}
-
-.vc_col-sm-6, .vc_col-sm-2, .vc_col-sm-3 {
-    width: auto; /* Allow columns to adjust in flex layout */
-}
-
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .vc_row-fluid {
         display: block; /* Stack the columns */
     }
 
-    .vc_col-sm-6, .vc_col-sm-2, .vc_col-sm-3 {
+    .vc_col-sm-6, .vc_col-sm-3 {
         width: 100%;  /* Ensure each column takes full width */
         margin-top: 10px; /* Add spacing between the columns */
+    }
+
+    .prices {
+        margin-top: 10px; /* Add spacing between description and prices */
+        text-align: left; /* Align prices to the left */
     }
 }
 
