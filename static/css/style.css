@@ -409,7 +409,67 @@ p {
     color: #666666;
 }
 
+/*---------------------------------Reset password*/
 
+/* Password Reset Container */
+.password-reset-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.password-reset-container h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.password-reset-container p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* Form Inputs */
+#password-reset-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#password-reset-form input[type="email"]:focus {
+    border-color: #F65D73; /* Custom pink color */
+    outline: none;
+    box-shadow: 0 0 8px rgba(246, 93, 115, 0.4);
+}
+
+/* Button */
+#password-reset-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #F65D73; /* Custom pink color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#password-reset-form button:hover {
+    background-color: #E14A61; /* Darker pink on hover */
+}
 
 /* Media Queries for Responsiveness */
 
