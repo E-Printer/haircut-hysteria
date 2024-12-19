@@ -43,9 +43,3 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"Booking for {self.customer}, with {self.stylist} at {self.time} on {self.date}."
-
-    def calculate_total(self):
-        return sum(service.price for service in self.services.all())
-    
-    def get_duration(self):
-        return sum(service.duration for service in self.services.all())

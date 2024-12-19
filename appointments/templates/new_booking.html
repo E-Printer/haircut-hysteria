@@ -2,35 +2,36 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
-    <div>
-        <h1>Make an appointment!</h1>
-        <form action="" method="post">
-            {% csrf_token %}
-            
-            <div>
-                <!-- Render form fields manually for better control -->
-                {{ form.as_p }} 
-            </div>
-            
-            <div>
-                <!-- Submit button -->
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-    {% endblock content %}
-    
-    {% if form.errors %}
-        <div class="error">
-            <ul>
-                {% for field in form %}
-                    {% for error in field.errors %}
-                        <li>{{ error }}</li>
-                    {% endfor %}
-                {% endfor %}
-            </ul>
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card" style="width: 100%; max-width: 800px; background-color: #f9f9f9;">
+        <div class="card-body text-center">
+            <h1>Make an appointment!</h1>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div>
+                    {{ form.as_p }}
+                </div>
+                <div>
+                    <button type="submit" class="btn submit-button">Submit</button>
+                </div>
+            </form>
         </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% if form.errors %}
+<div class="error">
+    <ul>
+        {% for field in form %}
+        {% for error in field.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
 </div>
 
 {% endif %}
