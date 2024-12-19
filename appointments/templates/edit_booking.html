@@ -4,8 +4,8 @@
 {% block content %}
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="card" style="width: 100%; max-width: 800px; ">
-        <div class="card-body text-center card-body-custom" style="background-color: #f9f9f9;">
+    <div class="card" style="width: 100%; max-width: 800px; background-color: #f9f9f9;">
+        <div class="card-body text-center">
             <h1>Edit Your appointment</h1>
             <form action="" method="post">
                 {% csrf_token %}
@@ -18,66 +18,40 @@
                 <div>
                     <!-- Submit button -->
                     <button type="submit" class="submit-button">Submit</button>
-                    <a href="{% url 'delete_booking' booking.id %}" class="delete-button">Delete</a>
+                    <button type="button" class="delete-button" data-bs-toggle="modal"
+                        data-bs-target="#deleteModal{{ booking.id }}">
+                        <i class="bi bi-trash"></i> Cancel
+                    </button>
+
+                    <!-- Delete Modal -->
+                    <div class="modal fade" id="deleteModal{{ booking.id }}" tabindex="-1"
+                        aria-labelledby="deleteModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="deleteModalLabel">Cancellation Confirm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to cancel this appointment?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Keep</button>
+                                    <form method="POST" action="{% url 'delete_booking' booking.id %}" class="d-inline">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-danger">Cancel</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
-
-
-
-
-<div class="container">
-    <div>
-        <h1>Edit your appointment</h1>
-        <form action="" method="post">
-            {% csrf_token %}
-
-            <div>
-                <!-- Render form fields manually for better control -->
-                {{ form.as_p }}
-            </div>
-
-            <div>
-                <!-- Submit button -->
-                <button type="submit" class="submit-button">Submit</button>
-
-                <!-- delete button -->
-                <!-- Delete Button -->
-                <button type="button" class="delete-button" data-bs-toggle="modal"
-                    data-bs-target="#deleteModal{{ booking.id }}">
-                    <i class="bi bi-trash"></i> Cancel
-                </button>
-
-                <!-- Delete Modal -->
-                <div class="modal fade" id="deleteModal{{ booking.id }}" tabindex="-1" aria-labelledby="deleteModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="deleteModalLabel">Cancellation Confirm</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Are you sure you want to cancel this appointment?
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                <form method="POST" action="{% url 'delete_booking' booking.id %}" class="d-inline">
-                                    {% csrf_token %}
-                                    <button type="submit" class="btn btn-danger">Cancel</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-
 
 
 

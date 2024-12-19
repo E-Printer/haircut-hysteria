@@ -17,12 +17,13 @@ body {
 .brand {
     font-family: Noticia Text, sans-serif;
 }
+
 .navbar {
     background-color: #010314;
 }
 
 .nav-link:hover {
-    color: #F65D73!important;
+    color: #F65D73 !important;
 }
 
 .navbar .navbar-brand {
@@ -37,7 +38,7 @@ body {
 }
 
 .navbar .nav-link.active {
-    color:  #F65D73;
+    color: #F65D73;
     text-decoration: underline;
 }
 
@@ -76,6 +77,7 @@ body {
     background-color: #F65D73;
     color: #fff;
 }
+
 .rounded-circle {
     border-radius: 50%;
     height: 250px;
@@ -264,7 +266,8 @@ p {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #f7f7f7; /* Softer, modern background */
+    background-color: #f7f7f7;
+    /* Softer, modern background */
 }
 
 /* Login Card */
@@ -319,7 +322,8 @@ p {
 }
 
 .login-btn:hover {
-    background-color: #d94c63; /* Slightly darker pink */
+    background-color: #d94c63;
+    /* Slightly darker pink */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -452,7 +456,8 @@ p {
 }
 
 #password-reset-form input[type="email"]:focus {
-    border-color: #F65D73; /* Custom pink color */
+    border-color: #F65D73;
+    /* Custom pink color */
     outline: none;
     box-shadow: 0 0 8px rgba(246, 93, 115, 0.4);
 }
@@ -464,7 +469,8 @@ p {
     font-size: 16px;
     font-weight: 600;
     color: white;
-    background-color: #F65D73; /* Custom pink color */
+    background-color: #F65D73;
+    /* Custom pink color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -472,7 +478,8 @@ p {
 }
 
 #password-reset-form button:hover {
-    background-color: #E14A61; /* Darker pink on hover */
+    background-color: #E14A61;
+    /* Darker pink on hover */
 }
 
 /* Media Queries for Responsiveness */
@@ -668,7 +675,7 @@ p {
 /* style for email contact */
 a[href^="mailto:"] {
     text-decoration: none;
-    color: rgba(0,0,0,.5)!important;
+    color: rgba(0, 0, 0, .5) !important;
 }
 
 /* style for services widget */
@@ -748,7 +755,7 @@ ul {
 
 /* set max width for form elements to prvent overhand on very small screens */
 
-select, 
+select,
 input {
     max-width: 100%;
 }
