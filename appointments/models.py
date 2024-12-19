@@ -9,8 +9,8 @@ class Service(models.Model):
     """
     name = models.CharField(max_length=200, unique=True)
     description = models.TextField()
-    duration = models.IntegerField()
-    price = models.DecimalField(max_digits=8, decimal_places=2, default=00.00)
+    duration = models.IntegerField(help_text="Duration in minutes")
+    price = models.DecimalField(max_digits=8, decimal_places=2, default=00.00, help_text="Price")
 
     def __str__(self):
         return f"{self.name}"
@@ -43,3 +43,9 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"Booking for {self.customer}, with {self.stylist} at {self.time} on {self.date}."
+
+    def calculate_total(self):
+        return sum(service.price for service in self.services.all())
+    
+    def get_duration(self):
+        return sum(service.duration for service in self.services.all())
