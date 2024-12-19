@@ -5,8 +5,8 @@
 
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="card" style="width: 100%; max-width: 800px; background-color: #f9f9f9;">
-        <div class="card-body text-center">
+    <div class="card" style="width: 100%; max-width: 800px;">
+        <div class="card-body text-center card-body-custom" style="background-color: #f9f9f9;">
             {% csrf_token %}
             <h1>Your Bookings!</h1>
             {% if bookings %}
