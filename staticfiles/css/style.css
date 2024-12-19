@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* General Styles */
 body {
@@ -9,16 +9,20 @@ body {
 
 
 .main-bg {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 /* Navbar Styles */
+
+.brand {
+    font-family: Noticia Text, sans-serif;
+}
 .navbar {
     background-color: #010314;
 }
 
 .nav-link:hover {
-    color: #ffffff31 !important;
+    color: #F65D73!important;
 }
 
 .navbar .navbar-brand {
@@ -28,18 +32,21 @@ body {
 
 .navbar .nav-link {
     color: white;
+    padding: 5px;
+    margin: 2px;
 }
 
 .navbar .nav-link.active {
-    color: #F65d73;
+    color:  #F65D73;
+    text-decoration: underline;
 }
 
-.navbar-toggler-icon {
-    background-color: white;
+.navbar-toggler span {
+    color: white;
 }
 
 .navbar-subtext {
-    color: white;
+    color: #F65D73;
     font-size: 0.9rem;
 }
 
@@ -64,6 +71,11 @@ body {
 }
 
 /* images styles /Stylist*/
+
+.stylists-title {
+    background-color: #F65D73;
+    color: #fff;
+}
 .rounded-circle {
     border-radius: 50%;
     height: 250px;
@@ -109,10 +121,14 @@ p {
 }
 
 .card-body {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body-custom {
+    background-color: #f9f9f9;
 }
 
 .align-items-center {
@@ -137,7 +153,7 @@ p {
 }
 
 .social-icons:hover {
-    color: #e8d5b5;
+    color: #F65D73;
 }
 
 /*styling for the delete button */
@@ -239,6 +255,226 @@ p {
     color: white;
 }
 
+/*--------------------log in styling*/
+
+/* Login Container */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* Softer, modern background */
+}
+
+/* Login Card */
+.login-card {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: 1px solid #f0f0f0;
+}
+
+/* Login Title */
+.login-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Form Inputs */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.login-form input:focus {
+    border-color: #F65D73;
+    outline: none;
+    box-shadow: 0 0 8px rgba(246, 93, 115, 0.5);
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    background-color: #F65D73;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #d94c63; /* Slightly darker pink */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Links Styling */
+.login-link {
+    color: #F65D73;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.login-link:hover {
+    color: #d94c63;
+}
+
+/* Forgot Password and Signup Text */
+.login-forgot,
+.login-signup {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 15px;
+}
+
+/*--------------------------sign up styling*/
+
+/* Sign Up Container */
+.signup-container {
+    min-height: calc(100vh - 200px);
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sign Up Card */
+.signup-card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Sign Up Title */
+.signup-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Sign Up Form Input */
+.signup-form input {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Sign Up Button */
+.signup-btn {
+    background-color: #F65D73;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #d94c63;
+    color: white;
+}
+
+/* Sign Up Links */
+.signup-link {
+    font-weight: 500;
+    color: #F65D73;
+    transition: color 0.2s ease;
+}
+
+.signup-link:hover {
+    color: #d94c63;
+}
+
+/* Sign Up Login Text */
+.signup-login {
+    font-size: 14px;
+    color: #666666;
+}
+
+/*---------------------------------Reset password*/
+
+/* Password Reset Container */
+.password-reset-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.password-reset-container h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.password-reset-container p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* Form Inputs */
+#password-reset-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#password-reset-form input[type="email"]:focus {
+    border-color: #F65D73; /* Custom pink color */
+    outline: none;
+    box-shadow: 0 0 8px rgba(246, 93, 115, 0.4);
+}
+
+/* Button */
+#password-reset-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #F65D73; /* Custom pink color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#password-reset-form button:hover {
+    background-color: #E14A61; /* Darker pink on hover */
+}
+
 /* Media Queries for Responsiveness */
 
 /* For mobile screens */
@@ -301,34 +537,50 @@ p {
 .carousel-control-prev,
 .carousel-control-next {
     height: 100%;
-    /* Make the control buttons fill the entire height */
+    /* Make control buttons fill the entire height */
+    position: absolute;
+    /* Ensure the controls are placed inside the carousel */
+    background-size: contain;
+    bottom: 0;
     display: flex;
     align-items: center;
     /* Vertically center the icon */
     justify-content: center;
     /* Horizontally center the icon */
+    z-index: 1050;
+    /* Ensure controls are above the carousel content */
 }
 
-/* Optional: Add padding to control icons for better touch areas */
+/* Optional: Add a background color to the control icons for better visibility */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5);
-    /* Optional: adds a background color to the icons for visibility */
+    /* Semi-transparent background for visibility */
     border-radius: 50%;
-    /* Optional: rounds the icons */
+    /* Rounded control icons */
     padding: 10px;
-    /* Add some padding around the icon for easier clicking */
+    /* Padding for better touch areas */
 }
 
-
-/* Icons for the Carousel Controls */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Optional: adds a background color to the icons for visibility */
-    border-radius: 50%;
-    /* Optional: rounds the icons */
+/* Optional: Customize the carousel control hover effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker background on hover for better visibility */
 }
+
+/* Optional: Styling for the next control */
+.carousel-control-next {
+    right: 0;
+    /* Position it to the right */
+}
+
+/* Optional: Styling for the previous control */
+.carousel-control-prev {
+    left: 0;
+    /* Position it to the left */
+}
+
 
 /* Optional: Change the icon images, these are the default Bootstrap icons */
 .carousel-control-prev-icon {
@@ -413,7 +665,11 @@ p {
     }
 }
 
-
+/* style for email contact */
+a[href^="mailto:"] {
+    text-decoration: none;
+    color: rgba(0,0,0,.5)!important;
+}
 
 /* style for services widget */
 
@@ -483,13 +739,19 @@ p {
     text-align: right;
 }
 
-
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+
+/* set max width for form elements to prvent overhand on very small screens */
+
+select, 
+input {
+    max-width: 100%;
+}
 
 /* small screen style for carousel */
 
