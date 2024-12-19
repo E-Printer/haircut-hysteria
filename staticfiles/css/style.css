@@ -31,7 +31,7 @@ body {
 }
 
 .navbar .nav-link.active {
-    color: #F65d73;
+    color: #FAF3C8;
 }
 
 .navbar-toggler-icon {
@@ -109,10 +109,14 @@ p {
 }
 
 .card-body {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body-custom {
+    background-color: #f9f9f9;
 }
 
 .align-items-center {
