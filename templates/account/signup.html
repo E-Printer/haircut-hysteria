@@ -1,19 +1,18 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6 mx-auto my-5">
-            <h2 class="text-center">Create an Account</h2>
-            <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="btn btn-primary w-100 mt-3">Sign Up</button>
-            </form>
-            <p class="mt-3 text-center">
-                Already have an account? <a href="{% url 'account_login' %}">Log In</a>
-            </p>
-        </div>
+<div class="signup-container d-flex justify-content-center align-items-center py-5">
+    <div class="signup-card card shadow-lg border-0 p-4" style="max-width: 400px; width: 100%;">
+        <h2 class="signup-title text-center mb-4">Create an Account</h2>
+        <form method="post" class="signup-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="signup-btn btn btn-primary w-100 mt-3">Sign Up</button>
+        </form>
+        <p class="signup-login mt-3 text-center small">
+            Already have an account? <a href="{% url 'account_login' %}" class="signup-link text-decoration-none">Log In</a>
+        </p>
     </div>
 </div>
 {% endblock content %}
+
