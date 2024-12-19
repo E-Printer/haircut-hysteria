@@ -13,7 +13,7 @@ class Service(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2, default=00.00)
 
     def __str__(self):
-        return f"You have booked {self.name}."
+        return f"{self.name}"
 
 class Stylist(models.Model):
     """
@@ -23,7 +23,7 @@ class Stylist(models.Model):
     bio = models.TextField(blank=True, null=True, help_text="A short bio")
 
     def __str__(self):
-        return f"Your stylist is {self.name}."
+        return f"{self.name}"
 
 STATUS = ((0, "Pending"), (1, "Confirmed"), (2, "Cancelled"))
 
