@@ -306,6 +306,7 @@ p {
     align-items: center;  /* Vertically center the icon */
     justify-content: center;  /* Horizontally center the icon */
     z-index: 1050;  /* Ensure controls are above the carousel content */
+    padding-top: 0px;
 }
 
 
