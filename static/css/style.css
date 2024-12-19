@@ -308,6 +308,13 @@ p {
     z-index: 1050;  /* Ensure controls are above the carousel content */
 }
 
+/* Optional: Add a background color to the control icons for better visibility */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for visibility */
+    border-radius: 50%;  /* Rounded control icons */
+    padding: 10px;  /* Padding for better touch areas */
+}
 
 /* Optional: Customize the carousel control hover effect */
 .carousel-control-prev:hover, 
