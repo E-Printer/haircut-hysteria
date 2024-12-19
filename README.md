@@ -4,7 +4,7 @@
 
 <br>
 
-The deployed site can be found [here]().
+The deployed site can be found [here](https://hh-booking-project-05701fec89a2.herokuapp.com/).
 
 # Index
 - [Purpose](#purpose)
@@ -115,11 +115,13 @@ All user stories can be found on the [Project Board](https://github.com/users/E-
 
 ## Agile Methodolgies & Project Board
 
-<img src=static/images/readme/agile/capstone_project_board.png alt="Screenshot of GitHub project board" width="600" height="300">
+<img src=static/images/readme/haircut-hysteria-project-board.png alt="Screenshot of GitHub project board" width="600" height="300">
 
 <br>
 
-The completed sprint was composed of X separate items. Having used the MoSCoW approach to prioritisation, X were classified as "Must-Have", X as "Should-Have" and "Could-Have". The rest of the first sprint was made up of "Won't-Have" items and remain in the backlog.
+The completed sprint was composed of 14 separate items. Having used the MoSCoW approach to prioritisation, 9 were classified as "Must-Have", 3 as "Should-Have" and 1 "Could-Have". The rest of the first sprint was made up of "Won't-Have" items and remain in the backlog. 
+
+We partially applied some of the acceptance criteria of some of our Should Have Critieria such as including contact information with the rest of acceptance criteria in the backlog such as adding maps and contact forms.
 
 Full [Project Board](https://github.com/users/E-Printer/projects/4/)
 
