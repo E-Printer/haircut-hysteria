@@ -1,23 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6 mx-auto my-5">
-            <h2 class="text-center">Log In</h2>
-            <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="btn btn-primary w-100 mt-3">Log In</button>
-            </form>
-            <p class="mt-3 text-center">
-                Forgot your password? <a href="{% url 'account_reset_password' %}">Reset it here</a>.
-            </p>
-            <p class="mt-3 text-center">
-                Don't have an account? <a href="{% url 'account_signup' %}">Sign Up</a>
-            </p>
-        </div>
+<div class="login-container d-flex justify-content-center align-items-center vh-100">
+    <div class="login-card card shadow-lg border-0 p-4" style="max-width: 400px; width: 100%;">
+        <h2 class="login-title text-center mb-4">Log In</h2>
+        <form method="post" class="login-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="login-btn btn btn-primary w-100 mt-3">Log In</button>
+        </form>
+        <p class="login-forgot mt-3 text-center small">
+            Forgot your password? <a href="{% url 'account_reset_password' %}" class="login-link text-decoration-none">Reset it here</a>.
+        </p>
+        <p class="login-signup mt-3 text-center small">
+            Don't have an account? <a href="{% url 'account_signup' %}" class="login-link text-decoration-none">Sign Up</a>
+        </p>
     </div>
-    
 </div>
 {% endblock content %}
