@@ -449,3 +449,22 @@ ul {
         height: auto;
     }
 }
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .vc_row-fluid {
+        display: block; /* Stack the columns */
+    }
+
+    .vc_col-sm-6, .vc_col-sm-3 {
+        width: 100%;  /* Ensure each column takes full width */
+        margin-top: 10px; /* Add spacing between the columns */
+    }
+
+    .prices {
+        margin-top: 10px; /* Add spacing between description and prices */
+        text-align: left; /* Align prices to the left */
+    }
+}
+
+
