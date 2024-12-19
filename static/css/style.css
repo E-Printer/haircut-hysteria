@@ -677,6 +677,13 @@ ul {
 }
 
 
+/* set max width for form elements to prvent overhand on very small screens */
+
+select, 
+input {
+    max-width: 100%;
+}
+
 /* small screen style for carousel */
 
 @media only screen and (max-width: 600px) {
