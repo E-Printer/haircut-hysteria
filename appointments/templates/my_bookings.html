@@ -2,14 +2,16 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
-    <div>
-        {% csrf_token %}
-        <h1>Your Bookings!</h1>
-        {% if bookings %}
 
-        {% for booking in bookings %}
-        <div>
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card" style="width: 100%; max-width: 800px; background-color: #f9f9f9;">
+        <div class="card-body text-center">
+            {% csrf_token %}
+            <h1>Your Bookings!</h1>
+            {% if bookings %}
+
+            {% for booking in bookings %}
 
             <h5>
                 Booking for {{ booking.customer.username }} with {{ booking.stylist.name }} at {{ booking.time }} on
@@ -23,16 +25,12 @@
                 <a href="{% url 'edit_booking' pk=booking.pk  %}" class="btn btn-success">Edit</a>
             </p>
 
+            {% endfor %}
+            {% else %}
+            <p>You have no bookings at the moment.</p>
+            {% endif %}
         </div>
-
-        {% endfor %}
-        {% else %}
-
-        <p>You have no bookings at the moment.</p>
-
-        {% endif %}
     </div>
 </div>
 
-
-{% endblock content %}
+{% endblock %}
