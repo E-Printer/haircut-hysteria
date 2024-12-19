@@ -4,7 +4,7 @@
 
 <br>
 
-The deployed site can be found [here](https://hh-booking-project-05701fec89a2.herokuapp.com/).
+The deployed site can be found [here](static/images/readme/mockup.png).
 
 # Index
 - [Purpose](#purpose)
@@ -295,63 +295,29 @@ The site was tested on the following browsers for compatibility:
 
 The site was tested using Lighthouse acheiving the following results:
 
-<img src=static/images/readme/testing/lighthouse_1.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-<br>
-
-<img src=static/images/readme/testing/lighthouse_2.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-#### Further results for Lighthouse testing shown below:
-
-##### Performance
-
-<img src=static/images/readme/testing/lighthouse_3.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-<br>
-
-##### Accessibility
-
-<img src=static/images/readme/testing/lighthouse_4.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-<br>
-
-##### Best Practises
-
-<img src=static/images/readme/testing/lighthouse_5.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-<br>
-
-##### SEO
-
-<img src=static/images/readme/testing/lighthouse_6.png alt="A screenshot showing the results of Lighthouse testing" width="600">
+<img src=static/images/readme/testing/lighthouse.png alt="A screenshot showing the results of Lighthouse testing" width="600">
 
 ### Responsive Testing
+
 
 
 ### Validator Testing
 
 - HTML
 
-**Homepage**<hr>
-<img src=static/images/readme/validation/home_html.png alt="HTML validation screenshot">
+We ran the HTML through a validatoor and had a few small errors and fixed these.
 
-**Project Detail**<hr>
-<img src=static/images/readme/validation/project_detail_html.png alt="HTML validation screenshot">
+<img src=static/images/readme/testing/html_1.png alt="HTML validation screenshot">
 
-**About**<hr>
-<img src=static/images/readme/validation/about_html.png alt="HTML validation screenshot">
+<br>
 
-**Reviews**<hr>
-<img src=static/images/readme/validation/reviews_html.png alt="HTML validation screenshot">
-
-**Contact**<hr>
-<img src=static/images/readme/validation/contact_html.png alt="HTML validation screenshot">
+<img src=static/images/readme/testing/html_2.png alt="HTML validation screenshot">
 
 <hr>
 
 - CSS
 
-<br>
+We had no errors in our CSS when validating it.
 
 <img src=static/images/readme/testing/css_validator.png alt="css validation screenshot">
 
@@ -406,9 +372,11 @@ The deployed site can be found [here](https://ci-full-stack-portfolio-app-7c4baf
 
 ## Reflection
 
-### Successes
+We enjoyed this project and all learnt a lot working together and building a booking system. We tried to implement some new fatures and techniques to style our code and delivered our MVP. 
 
 ### Challenges
+
+We had some challenges with our CSS styling when we hadn't collected the static files for deployment but no major issues.
 
 ### Future Improvements & Iterations
 
