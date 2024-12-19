@@ -19,7 +19,7 @@ class Stylist(models.Model):
     """
     """
     name = models.CharField(max_length=150, unique=True)
-    type = models.CharField(max_length=50)
+    type = models.CharField(max_length=50, help_text="Junior, Mid-level, or Senior")
     bio = models.TextField(blank=True, null=True, help_text="A short bio")
 
     def __str__(self):
