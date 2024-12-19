@@ -9,7 +9,7 @@ body {
 
 
 .main-bg {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
 }
 
 /* Navbar Styles */
@@ -17,7 +17,9 @@ body {
     background-color: #010314;
 }
 
-.nav-link:hover { color: #ffffff31 !important; }
+.nav-link:hover {
+    color: #ffffff31 !important;
+}
 
 .navbar .navbar-brand {
     color: white;
@@ -342,22 +344,34 @@ p {
 /* Styling for the fixed button */
 .carousel-button {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
-    background-color: rgba(80, 85, 91, 0.7); /* Primary color with lower opacity */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Slightly rounded corners */
-    padding: 10px 20px; /* Add padding for size */
-    font-size: 18px; /* Adjust font size */
-    z-index: 2; /* Ensure it stays above carousel slides */
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for perfect centering */
+    background-color: rgba(80, 85, 91, 0.7);
+    /* Primary color with lower opacity */
+    color: white;
+    /* White text */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Slightly rounded corners */
+    padding: 10px 20px;
+    /* Add padding for size */
+    font-size: 18px;
+    /* Adjust font size */
+    z-index: 2;
+    /* Ensure it stays above carousel slides */
+    transition: background-color 0.3s ease;
+    /* Smooth hover transition */
 }
 
 /* Hover effect */
 .carousel-button:hover {
-    background-color: rgba(147, 153, 160, 0.7); /* Fully opaque on hover */
+    background-color: rgba(147, 153, 160, 0.7);
+    /* Fully opaque on hover */
     color: white;
 }
 
@@ -474,8 +488,8 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
+}
+
 
 /* small screen style for carousel */
 
@@ -488,18 +502,22 @@ ul {
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .vc_row-fluid {
-        display: block; /* Stack the columns */
+        display: block;
+        /* Stack the columns */
     }
 
-    .vc_col-sm-6, .vc_col-sm-3 {
-        width: 100%;  /* Ensure each column takes full width */
-        margin-top: 10px; /* Add spacing between the columns */
+    .vc_col-sm-6,
+    .vc_col-sm-3 {
+        width: 100%;
+        /* Ensure each column takes full width */
+        margin-top: 10px;
+        /* Add spacing between the columns */
     }
 
     .prices {
-        margin-top: 10px; /* Add spacing between description and prices */
-        text-align: left; /* Align prices to the left */
+        margin-top: 10px;
+        /* Add spacing between description and prices */
+        text-align: left;
+        /* Align prices to the left */
     }
 }
-
-
