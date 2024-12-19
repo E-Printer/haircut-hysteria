@@ -37,13 +37,12 @@ body {
 }
 
 .navbar .nav-link.active {
-    background-color: #fff;
     color:  #F65D73;
     text-decoration: underline;
 }
 
-.navbar-toggler-icon {
-    background-color: white;
+.navbar-toggler span {
+    color: white;
 }
 
 .navbar-subtext {
