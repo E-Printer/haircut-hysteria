@@ -158,11 +158,9 @@ We sourced images from [Pexels](https://www.pexels.com/) and [Unsplash](https://
 
 ### Accessibility
 
-<img src=static/images/readme/responsive_mockup.png alt="A screenshot showing the project on multiple devices" width="600" height="300">
+The site is fully responsive on different devices. 
 
-<br>
-
-### Accessibility Considerations
+<img src=/workspace/haircut-hysteria/static/images/readme/mockup.png alt="A screenshot showing the project on multiple devices" width="600" height="300">
 
 ## Features
 
