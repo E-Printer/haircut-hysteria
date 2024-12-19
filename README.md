@@ -1,12 +1,13 @@
 # Haircut Hysteria Hackathon
 
-<img src=static/images/readme/responsive_mockup.png alt="A screenshot showing the project on multiple devices" width="600" height="300">
+<img src=static/images/readme/mockup.png alt="A screenshot showing the project on multiple devices" width="600" height="300">
 
 <br>
 
 The deployed site can be found [here](static/images/readme/mockup.png).
 
 # Index
+
 - [Purpose](#purpose)
 - [Planning](#planning)
 - [User Stories](#user-stories)
@@ -37,81 +38,7 @@ Initially the project was planned out using a Miro board to start to brainstorm 
 
 ## User Stories
 
-<table>
-
-  <tr>
-    <th>User Story</th>
-    <th>Moscow</th>
-    <th>Acceptance Criteria</th>
-  </tr>
-
-  <tr>
-    <td>As an Admin/Stylist,
-    I can manage bookings on the admin dashboard </td>
-    <td>Must Have</td>
-    <td>
-    - Be able to cancel or reschedule bookings
-    - 
-    </td>
-    </tr>
-
-  <tr>
-    <td>As a User,
-    I want to log in using my login details 
-    So that I can access my current bookings.</td>
-    <td>Must Have</td>
-    <td>
-    - User can log in using credentials they register with
-    - If login is successful, the user can see their bookings
-    </td>
-  </tr>
-
-  <tr>
-    <td>As a User,
-    I want to update or cancel my appointment 
-    So that I can modify my booking if necessery</td>
-    <td>Must Have</td>
-    <td>
-    - The user can update their appoinment's date or time
-    - the user can cancel an appointment 
-    - after updating or canceling, the user receives a notification</td>
-  </tr>
-
-  <tr>
-    <td>As a User,
-    I want to be able to leave a message in the booking form,
-    So that I can provide additional information or special requests for my appointment</td>
-    <td>Must Have </td>
-    <td>
-    - Booking form includes an optional "Message" text box
-    - The user can enter up to 500 characters in the message field
-    - Message field optional
-    </td>
-  </tr>
-  
-  <tr>
-    <td>As a Admin,
-    I want to be able to view and manage all user appoinments
-    So that I can assist users with their bookings.</td>
-    <td>Must Have</td>
-    <td>
-    - Admin can view all user appointments in a list
-    - Admin can filter appointments by date, stylist, and status
-    - Admin can cancel or modify any user appointments
-    </td>
-  </tr>
-
-  <tr>
-
-  <tr>
-    <td>As a User</td>
-    <td>Won't Have</td>
-    <td>Feature for future iteration.</td>
-  </tr>
-
-</table>
-
-All user stories can be found on the [Project Board](https://github.com/users/E-Printer/projects/4/views/1) including the relevant tasks, MOSCOW prioritisation for them and current status. 
+All user stories can be found on the [Project Board](https://github.com/users/E-Printer/projects/4/views/1) including the relevant tasks, MOSCOW prioritisation for them and current status.
 
 ## Agile Methodolgies & Project Board
 
@@ -119,7 +46,7 @@ All user stories can be found on the [Project Board](https://github.com/users/E-
 
 <br>
 
-The completed sprint was composed of 14 separate items. Having used the MoSCoW approach to prioritisation, 9 were classified as "Must-Have", 3 as "Should-Have" and 1 "Could-Have". The rest of the first sprint was made up of "Won't-Have" items and remain in the backlog. 
+The completed sprint was composed of 14 separate items. Having used the MoSCoW approach to prioritisation, 9 were classified as "Must-Have", 3 as "Should-Have" and 1 "Could-Have". The rest of the first sprint was made up of "Won't-Have" items and remain in the backlog.
 
 We partially applied some of the acceptance criteria of some of our Should Have Critieria such as including contact information with the rest of acceptance criteria in the backlog such as adding maps and contact forms.
 
@@ -137,14 +64,13 @@ A flowchart to show the potential flow of users across the application and to he
 
 The ERD (Entity Relationship Diagram) shows all relationships for the models used within the project.
 
-
 <img src=static/images/readme/planning/model_relationships.png image alt="ERD diagram" width="600" height="300">
 
 ## Design Decisions & UX
 
 Many different wireframes were produced to help plan the project including for desktop, tablet and mobile devices.
 
-We had several ideas during the wireframing process and as the project took shape our designs evolved. 
+We had several ideas during the wireframing process and as the project took shape our designs evolved.
 
 ### Desktop
 
@@ -214,7 +140,7 @@ We had several ideas during the wireframing process and as the project took shap
 
 ### Typography
 
-We selected our fonts from [Google Fonts](www.googlefonts.com) and choose Roboto for the main body text, Lato for H1 headings and Noticia Text for the Brand. 
+We selected our fonts from [Google Fonts](www.googlefonts.com) and choose Roboto for the main body text, Lato for H1 headings and Noticia Text for the Brand.
 
 <img src=static/images/readme/design/hh_fonts.png image alt="screenshot of Google fonts selected for project" width="600">
 
@@ -248,17 +174,19 @@ The Home page of the site shows a carousel of images of the hair salon and an ab
 
 **Appointments**
 
-The Appointments section allows site visitors to create, edit and delete upcoming appointments and receive confirmation that this has been done. 
+The Appointments section allows site visitors to create, edit and delete upcoming appointments and receive confirmation that this has been done.
 
 When a user is logged in, they can see My Bookings to view all their bookings and amend them.
 
 **Services**
 
+We added a services section with tables, details and pricing options for the different services on offer.
+
 **The Footer**
 
 The Footer has links to the various relevant professional and social media pages for the site owner.
 
-**Reigster**
+**Register**
 
 The site has a facility to sign up as a user in order this enables them to create, edit or delete their own reviews or comments on project posts.
 
@@ -276,30 +204,17 @@ The site has a facility for designated administrators to sign in, in order to ad
 
 ## Testing and Validation
 
-### Manual Testing
+### Automated Testing
 
-The site was tested on the following browsers for compatibility:
+We carried out some automated testing.
 
-### Chrome
-
-| Test                                    | Expected Result | Actual Result |
-| --------------------------------------- | --------------- | ------------- |
-| Click Home menu                         | Success         | Success       |
-### Safari
-
-| Test                                    | Expected Result | Actual Result |
-| --------------------------------------- | --------------- | ------------- |
-| Click Home menu                         | Success         | Success       |
+<img src=static/images/readme/models_test_results.png alt="A screenshot showing the results of Lighthouse testing" width="600">
 
 ### Lighthouse
 
 The site was tested using Lighthouse acheiving the following results:
 
 <img src=static/images/readme/testing/lighthouse.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-### Responsive Testing
-
-
 
 ### Validator Testing
 
@@ -372,7 +287,7 @@ The deployed site can be found [here](https://ci-full-stack-portfolio-app-7c4baf
 
 ## Reflection
 
-We enjoyed this project and all learnt a lot working together and building a booking system. We tried to implement some new fatures and techniques to style our code and delivered our MVP. 
+We enjoyed this project and all learnt a lot working together and building a booking system. We tried to implement some new fatures and techniques to style our code and delivered our MVP.
 
 ### Challenges
 
@@ -385,4 +300,3 @@ There were some features in our project board that we would like to build on inc
 ## Credits
 
 - This project is based on the "I Think Therefore I Blog" project from the Code Institute LMS and modified by the team to produce a booking system using HTML, CSS, Python, PostgreSQL and Django.
-
