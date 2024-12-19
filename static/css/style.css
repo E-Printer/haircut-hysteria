@@ -237,6 +237,95 @@ p {
     color: white;
 }
 
+/*--------------------log in styling*/
+
+/* Login Container */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5; /* Soft, modern background */
+}
+
+/* Login Card */
+.login-card {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px;
+    border: 1px solid #e0e0e0; /* Light gray border for subtle outline */
+}
+
+/* Login Title */
+.login-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333; /* Darker text for clarity */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional: Capitalize title for emphasis */
+}
+
+/* Form Inputs */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.login-form input:focus {
+    border-color: #007bff; /* Bootstrap primary blue on focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Links Styling */
+.login-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.login-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Forgot Password and Signup Text */
+.login-forgot,
+.login-signup {
+    font-size: 14px;
+    color: #666666; /* Subtle gray text */
+    margin-top: 15px;
+}
+
+
 /* Media Queries for Responsiveness */
 
 /* For mobile screens */
