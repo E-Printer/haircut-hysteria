@@ -4,7 +4,7 @@
 
 <br>
 
-The deployed site can be found [here](https://hh-booking-project-05701fec89a2.herokuapp.com/).
+The deployed site can be found [here](static/images/readme/mockup.png).
 
 # Index
 - [Purpose](#purpose)
@@ -295,83 +295,49 @@ The site was tested on the following browsers for compatibility:
 
 The site was tested using Lighthouse acheiving the following results:
 
-<img src=static/images/readme/testing/lighthouse_1.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-<br>
-
-<img src=static/images/readme/testing/lighthouse_2.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-#### Further results for Lighthouse testing shown below:
-
-##### Performance
-
-<img src=static/images/readme/testing/lighthouse_3.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-<br>
-
-##### Accessibility
-
-<img src=static/images/readme/testing/lighthouse_4.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-<br>
-
-##### Best Practises
-
-<img src=static/images/readme/testing/lighthouse_5.png alt="A screenshot showing the results of Lighthouse testing" width="600">
-
-<br>
-
-##### SEO
-
-<img src=static/images/readme/testing/lighthouse_6.png alt="A screenshot showing the results of Lighthouse testing" width="600">
+<img src=static/images/readme/testing/lighthouse.png alt="A screenshot showing the results of Lighthouse testing" width="600">
 
 ### Responsive Testing
+
 
 
 ### Validator Testing
 
 - HTML
 
-**Homepage**<hr>
-<img src=static/images/readme/validation/home_html.png alt="HTML validation screenshot">
+We ran the HTML through a validatoor and had a few small errors and fixed these.
 
-**Project Detail**<hr>
-<img src=static/images/readme/validation/project_detail_html.png alt="HTML validation screenshot">
+<img src=static/images/readme/testing/html_1.png alt="HTML validation screenshot">
 
-**About**<hr>
-<img src=static/images/readme/validation/about_html.png alt="HTML validation screenshot">
+<br>
 
-**Reviews**<hr>
-<img src=static/images/readme/validation/reviews_html.png alt="HTML validation screenshot">
-
-**Contact**<hr>
-<img src=static/images/readme/validation/contact_html.png alt="HTML validation screenshot">
+<img src=static/images/readme/testing/html_2.png alt="HTML validation screenshot">
 
 <hr>
 
 - CSS
 
-<br>
+We had no errors in our CSS when validating it.
 
-<img src=static/images/readme/validation/css.png alt="css validation screenshot">
+<img src=static/images/readme/testing/css_validator.png alt="css validation screenshot">
 
 <hr>
 
 - Javascript
 
-<img src=static/images/readme/validation/comments_js.png alt="JS Hint for comments.js">
+<img src=static/images/readme/testing/services_js.png alt="JS Hint for services.js">
 
 <br>
 
-<img src=static/images/readme/validation/reviews_js.png alt="JS Hint for reviews.js">
+<img src=static/images/readme/testing/toasts_js.png alt="JS Hint for toasts.js">
 
 ### Bugs
 
+We had some bugs involving the carousel, carousel buttons and CTA button for Book Now and how this changed on different views and devices.
+
 ## AI
 
-<img src=static/images/readme/ai/chatgpt.png alt="Screenshot from use of ChatGPT">
-
-<br>
+We utilised Claude AI and ChatGPT to support with fixing our code and troubleshooting.
 
 ## Deployment
 
@@ -406,16 +372,17 @@ The deployed site can be found [here](https://ci-full-stack-portfolio-app-7c4baf
 
 ## Reflection
 
-### Successes
+We enjoyed this project and all learnt a lot working together and building a booking system. We tried to implement some new fatures and techniques to style our code and delivered our MVP. 
 
 ### Challenges
 
-### Final Thoughts
+We had some challenges with our CSS styling when we hadn't collected the static files for deployment but no major issues.
 
 ### Future Improvements & Iterations
 
+There were some features in our project board that we would like to build on including adding a contact form and map within the contact information.
+
 ## Credits
 
-- This project is based on the "I Think Therefore I Blog" project from the Code Institute LMS
-- Help received to troubleshoot various issues during the project from Coding Coach team at Code Institute and Headforwards Bootcamp cohort
+- This project is based on the "I Think Therefore I Blog" project from the Code Institute LMS and modified by the team to produce a booking system using HTML, CSS, Python, PostgreSQL and Django.
 
