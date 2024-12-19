@@ -353,25 +353,25 @@ The site was tested using Lighthouse acheiving the following results:
 
 <br>
 
-<img src=static/images/readme/validation/css.png alt="css validation screenshot">
+<img src=static/images/readme/testing/css_validator.png alt="css validation screenshot">
 
 <hr>
 
 - Javascript
 
-<img src=static/images/readme/validation/comments_js.png alt="JS Hint for comments.js">
+<img src=static/images/readme/testing/services_js.png alt="JS Hint for services.js">
 
 <br>
 
-<img src=static/images/readme/validation/reviews_js.png alt="JS Hint for reviews.js">
+<img src=static/images/readme/testing/toasts_js.png alt="JS Hint for toasts.js">
 
 ### Bugs
 
+We had some bugs involving the carousel, carousel buttons and CTA button for Book Now and how this changed on different views and devices.
+
 ## AI
 
-<img src=static/images/readme/ai/chatgpt.png alt="Screenshot from use of ChatGPT">
-
-<br>
+We utilised Claude AI and ChatGPT to support with fixing our code and troubleshooting.
 
 ## Deployment
 
@@ -410,12 +410,11 @@ The deployed site can be found [here](https://ci-full-stack-portfolio-app-7c4baf
 
 ### Challenges
 
-### Final Thoughts
-
 ### Future Improvements & Iterations
+
+There were some features in our project board that we would like to build on including adding a contact form and map within the contact information.
 
 ## Credits
 
-- This project is based on the "I Think Therefore I Blog" project from the Code Institute LMS
-- Help received to troubleshoot various issues during the project from Coding Coach team at Code Institute and Headforwards Bootcamp cohort
+- This project is based on the "I Think Therefore I Blog" project from the Code Institute LMS and modified by the team to produce a booking system using HTML, CSS, Python, PostgreSQL and Django.
 
