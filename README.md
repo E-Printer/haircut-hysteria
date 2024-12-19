@@ -4,7 +4,7 @@
 
 <br>
 
-The deployed site can be found [here](static/images/readme/mockup.png).
+The deployed site can be found [here](https://hh-booking-project-05701fec89a2.herokuapp.com/).
 
 # Index
 
@@ -160,7 +160,7 @@ We sourced images from [Pexels](https://www.pexels.com/) and [Unsplash](https://
 
 The site is fully responsive on different devices. 
 
-<img src=/workspace/haircut-hysteria/static/images/readme/mockup.png alt="A screenshot showing the project on multiple devices" width="600" height="300">
+<img src=static/images/readme/mockup.png alt="A screenshot showing the project on multiple devices" width="600">
 
 ## Features
 
