@@ -37,13 +37,12 @@ body {
 }
 
 .navbar .nav-link.active {
-    background-color: #fff;
     color:  #F65D73;
     text-decoration: underline;
 }
 
-.navbar-toggler-icon {
-    background-color: white;
+.navbar-toggler span {
+    color: white;
 }
 
 .navbar-subtext {
@@ -677,6 +676,13 @@ ul {
     margin: 0;
 }
 
+
+/* set max width for form elements to prvent overhand on very small screens */
+
+select, 
+input {
+    max-width: 100%;
+}
 
 /* small screen style for carousel */
 
